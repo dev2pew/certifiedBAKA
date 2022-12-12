@@ -1,0 +1,15 @@
+/*  MADE BY ISLAM YERMEK
+    ALSO KNOWS AS SUB2PEW
+    THIS FILE IS A CSS/STYLESET
+
+    FUN THINGS TO DO -- CSS
+*/
+
+/* CHANGE TO FUN STUFF HOVERED */
+.headMENU a.logo:hover {    /* CHANGE LOGO IMAGE ON HOVER */
+    background-size: 200px 35px;    /* REFER TO MAINPAGE.HTML 14TH LINE */
+    background-image: url("../imgs/membersBAKAhover.png");
+    background-repeat: no-repeat;
+    background-position-x: 15px; /* FOR THOSE VALUES PLEASE */
+    background-position-y: 9px; /* REFER TO 76TH LINE ... */
+}

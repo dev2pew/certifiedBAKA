@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> @shaGGy </title>
+
+    <link rel="stylesheet" href="../../../style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/membersStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/scrollBAR.css" type="text/css">
+
+    <link rel="icon" href="../../../favicon/nine9.png" type="image/png">
+
+    <script type="text/javascript" src="../../../script/changeTEXT.js"> </script>
+    <script type="text/javascript" src="../../../script/replyPOST.js"> </script>
+    <script type="text/javascript" src="../../../script/userInfo/userInfoSHAGGY.js"> </script>
+    <script type="text/javascript" src="../../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../../script/currentTime.js"> </script>
+
+    <style>
+        h1, h2, h3 {
+        margin-left: 25px;
+        margin-right: 25px;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="headMENU">
+        <a href=".." class="logo"> <img src="../../../imgs/membersBAKA.png" alt="[9] membersBAKA" width="200px" height="35px" title=" ( 9 )  membersBAKA"> </a>
+        <div class="headMENU-R headMENUalt">
+            <a href="../../homepage" title=">> homePage"> homePage </a>
+            <a href="../../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
+            <a href="../../about" title=">> aboutPage"> aboutPage </a>
+        </div>
+        <div class="headSubMENU" title="[ i ] liveSTATUS">
+            <div class="headSubMENU headSubMenuGRAD">
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; profilePAGE -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> currently viewing user's profile webpage </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> profile webpage: @shaGGy </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> browsing user profile webpage </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    @shaGGy
+                    @shaGGy
+                    @shaGGy
+                    @shaGGy
+                    @shaGGy
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="underMENU">
+        <div style="white-space: nowrap">
+            <h1> <a href=".."> profiles </a> </h1>
+            <h2 style="padding-left: 65px; padding-bottom: 5px;"> └────────── <a href="javascript:window.location.href=window.location.href"> <span style="color: rgb(215, 130, 255)"> @shaGGy </span> </a> </h2>
+            <h3 style="padding-left: 265px;"> └────────── accountPage </h3>
+
+            <div style="padding: 10px;"> </div>
+            
+            <h3 style="padding-left: 25px;"> recently posted posts: </h3>
+            <h4 style="color: rgb(120, 120, 120); padding: 0px; padding-left: 365px; margin-top: -10px; position: absolute; opacity: 50%;"> last seen: [Dec 11, 2022] </h4>
+        </div>
+
+        <!-- ADD SPACE BETWEEN <H4> AND POSTS SECTION -->
+        <div style="padding: 5px;"> </div>
+
+        <div class="textBORDERquickView" style="width: 300px; float: right;">
+            <div class="postHEAD paragraphMARGIN">
+                <p style="color: gray"> <span style="color: darkturquoise;"> userINFO </span> </p>
+            </div>
+            <div class="borderLINE" style="float: right; height: 75%"> </div>
+                <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                    <div style="padding-left: 35px">
+                        <p style="cursor: help;"> <span> <a onclick="userINFO01()"> [ i ]&nbsp;&nbsp;profileBIO </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="userINFO02()"> [ i ]&nbsp;&nbsp;userType </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="userINFO03()"> [ i ]&nbsp;&nbsp;registrationDate </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="userINFO04()"> [ i ]&nbsp;&nbsp;totalPosts </a> </span> </p>
+                    </div>
+                </p>
+        </div>
+
+        <div id="postsBOX">
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(215, 130, 255);">@shaGGy</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 11, 2022 : 04:50 PM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        shot on Samsung Galaxy by: <span class="toolTIP"><a href="../../404" style="color: #abf7b1;">@saken</a><span class="toolTIPtxt" style="margin-left: -45px">member</span></span>
+                        <span class="mediaPOST"> <br>
+                            <video src="../../../media/postMEDIA/vid/shaggy/shaggyP05.mp4" preload="metadata" controls class="mediaROUNDED" style=" width: 215px; vertical-align: top;" alt="shaggyP05.mp4"> notSupportedVIDEO </video>
+                        </span> <br>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST06()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments06" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT06()"> <span id="subCOM06X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT06()"> <span id="subCOMshow06" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM06" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY06()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(215, 130, 255);">@shaGGy</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 11, 2022 : 04:47 PM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        shot-out to my dog: <span class="toolTIP"><a href="../../404" style="color: burlywood;">@king</a><span class="toolTIPtxt" style="margin-left: -45px">member</span></span>
+                        <span class="mediaPOST"> <br>
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP04-01.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy//thumb/shaggyP04-01_320x427.jpg" class="mediaROUNDED" loading="lazy" style=" width: 155px; vertical-align: top;" alt="shaggyP04-01.jpg">
+                            </a>
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP04-02.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy/thumb/shaggyP04-02_320x240.jpg" class="mediaROUNDED" loading="lazy" style=" width: 275px; vertical-align: top;" alt="shaggyP04-02.jpg">
+                            </a>
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP04-03.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy/thumb/shaggyP04-03_320x427.jpg" class="mediaROUNDED" loading="lazy" style=" width: 215px; vertical-align: top;" alt="shaggyP04-03.jpg">
+                            </a>
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP04-04alt.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy/thumb/shaggyP04-04alt_320x427.jpg" class="mediaROUNDED" loading="lazy" style=" width: 215px; vertical-align: top;" alt="shaggyP04-04alt.jpg">
+                            </a>
+                            <!-- <video src="../../../media/postMEDIA/vid/shaggy/shaggyP04-04alt.mp4" preload="metadata" controls class="mediaROUNDED" style=" width: 215px; vertical-align: top;" alt="shaggyP04-04alt.mp4"> notSupportedVIDEO </video> -->
+                        </span> <br>
+                        <p class="paragraphMARGIN" style="padding-top: inherit; padding-left: inherit;"> lolpa1nbowlol </p>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST05()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments05" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT05()"> <span id="subCOM05X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT05()"> <span id="subCOMshow05" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM05" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY05()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <div class="toolTIP" style="float: right;"> <!-- NSFW TAG -->
+                            <a> <span class="postTagNSFW" style="float: right;"> NSFW </span> </a>
+                            <span class="toolTIPtxt" style="margin-left: -69px; margin-bottom: 15px;"> strong language </span> 
+                        </div>
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(215, 130, 255);">@shaGGy</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 10, 2022 : 05:33 AM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        адресынды айтшы нафиг я тебе братьев щяс отправляю <br>
+                        или завтра отправлю и ваще номерінді личкама жазыпжер, <br>
+                        сен <span class="textSPOILER">пиздес</span> шыгарсын маган
+                        <span class="textSPOILER">наху</span> <span class="textSPOILER">котак</span> жеме дейтын!!
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST04()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments04" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT04()"> <span id="subCOM04X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT04()"> <span id="subCOMshow04" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM04" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY04()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(215, 130, 255);">@shaGGy</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 05, 2022 : 01:24 AM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        <span class="mediaPOST">
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP03.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy/thumb/shaggyP03_320x180.jpg" loading="lazy" class="mediaROUNDED" style=" width: 250px; vertical-align: top;" alt="shaggyP03.jpg">
+                            </a>
+                        </span>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST03()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments03" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT03()"> <span id="subCOM03X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT03()"> <span id="subCOMshow03" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM03" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY03()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(215, 130, 255);">@shaGGy</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 05, 2022 : 01:13 AM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        <span class="mediaPOST">
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP02.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy/thumb/shaggyP02_320x318.jpg" loading="lazy" class="mediaROUNDED" style=" width: 250px; vertical-align: top;" alt="shaggyP02.jpg">
+                            </a>
+                        </span>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM02" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(215, 130, 255);">@shaGGy</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 05, 2022 : 12:59 AM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        <span class="mediaPOST">
+                            <a href="../../../media/postMEDIA/img/shaggy/shaggyP01.jpg" target="_blank" title=">> openIMG">
+                                <img src="../../../media/postMEDIA/img/shaggy/thumb/shaggyP01_320x569.jpg" loading="lazy" class="mediaROUNDED" style=" width: 250px; vertical-align: top;" alt="shaggyP01.jpg">
+                            </a>
+                        </span>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST01()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments01" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT01()"> <span id="subCOM01X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT01()"> <span id="subCOMshow01" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM01" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY01()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

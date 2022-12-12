@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> funSTUFF </title>
+
+    <link rel="stylesheet" href="../../style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../style/funStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../style/scrollBAR.css" type="text/css">
+
+    <link rel="icon" href="../../favicon/funSTUFF.png" type="icon/png">
+
+    <script type="text/javascript" src="../../script/changeTEXT.js"> </script>
+    <script type="text/javascript" src="../../script/replyPOST.js"> </script>
+    <script type="text/javascript" src="../../script/quickViewTXT.js"> </script>
+    <script type="text/javascript" src="../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../script/currentTime.js"> </script>
+
+    <style>
+        h1, h2, h3 {
+        margin-left: 25px;
+        margin-right: 25px;
+        }
+
+        .borderLINE {
+        border-left: 6px solid white;
+        border-radius: 25px;
+        opacity: 10%;
+        height: 15px;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="headMENU">
+        <a href="javascript:alert('[ i ]  have some fun browsing here ! ~')" class="logo"> <img src="../../imgs/funLOGO.png" alt="[9] funSTUFF" width="200px" height="35px" title="funSTUFF"> </a>
+        <div class="headMENU-R headMENUalt">
+            <a href="../homepage" title=">> homePage"> homePage </a>
+            <a class="active" href="javascript:alert('[ i ]  you are currently on this subpage !!')" title="[ i ] you are here"> funSTUFF </a>
+            <a href="../about" title=">> aboutPage"> aboutPage </a>
+        </div>
+        <div class="headSubMENU" title="[ i ] liveSTATUS">
+            <div class="headSubMENU headSubMenuGRAD">
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; funSTUFF -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> welcome to the FUN zone !! </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> here you can have some good time while listening to great music or watching some short movies! </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> enjoy your stay here . . . </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    [FUN] come with us and have some FUN !!! ~~~
+                    [FUN] come with us and have some FUN !!! ~~~
+                    [FUN] come with us and have some FUN !!! ~~~
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="underMENU">
+        <div style="white-space: nowrap">
+            <h1> <a href="javascript:window.location.href=window.location.href"> funSTUFF </a> </h1>
+            <h2 style="padding-left: 75px;"> └────────── eAmusement </h2>
+        </div>
+        
+        <div class="textBORDERquickView" style="float: right; width: 300px;">
+            <div class="postHEAD paragraphMARGIN">
+                <p style="color: gray"> <span style="color: lightgreen;"> quickOverview </span> </p>
+            </div>
+            <div class="borderLINE" style="float: right; height: 75%"> </div>
+            <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                <div style="padding-left: 35px">
+                    <p style="cursor: help;"> <span> <a onclick="quickTXT01()"> [i] about this project </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="quickTXT02()"> [i] table of contents </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="quickTXT03()"> [i] software used </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="quickTXT04()"> [?] who is chiruno </a> </span> </p>
+                    <p> <span> <a href="../404/crash" onclick="audioWARN(); return confirm('[ ? ]  crashThisWebPAGE !!\ndo you really want to proceed ??');"> [!] crash this webpage!</a> </span> </p>
+                </div>
+            </p>
+        </div>
+
+        <div id="postsBOX">
+            <div class="textBORDER" style="float: left; width: 550px;">
+                <div class="postHEAD paragraphMARGIN">
+                    <p style="color: gray">
+                        <span style="color: cornflowerblue;">
+                            <span class="toolTIP">
+                                <a href="javascript:alert('[ i ]  this user is root-user ..')" style="color: rgb(195, 135, 255);">@root-user</a>
+                                <span class="toolTIPtxt" style="margin-left: -60px;"> root-user </span>
+                            </span>
+                        </span> ::  <span class="postDate toolTIP">
+                                        [Nov 30, 2022 : 07:18 AM]
+                                        <span class="toolTIPtxt"> postDate </span>
+                                    </span>
+                    </p>
+                </div>
+                <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                    welcome to the fun zone! <br>
+                    here are links where you can listen or watch <br>
+                    from our pre-made library.. we hope you'll like 'em! <br> <br>
+                </p>
+                <div class="textBORDERin" style="width: 250px;">
+                    <div class="borderLINEin" style="float: left; height: 70%"> </div>
+                    <p>
+                        <a href="../404"> [ &gt; ] video & movies&nbsp;&nbsp;&nbsp;&nbsp;... </a> <br>
+                        <a href="imagesGIFs"> [ &gt; ] images & GIFs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... </a> <br>
+                        <a href="../404"> [ &gt; ] soundtracks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... </a> <br>
+                        <a href="../404"> [ &gt; ] playGround&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... </a> <br>
+                    </p>
+                </div>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                <span class="toolTIP">
+                    <a class="linkDISABLED" onclick="disabledCOMMENT()"> [X] write a comment.. </a>
+                    <span class="toolTIPtxt" style="margin-left: -100px"> commenting disabled </span>
+                </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

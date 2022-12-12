@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> aboutBAKA </title>
+
+    <link rel="stylesheet" href="../../style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../style/scrollBAR.css" type="text/css">
+
+    <link rel="icon" href="../../favicon/aboutPAGE.png" type="image/png">
+
+    <script type="text/javascript" src="../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../script/currentTime.js"> </script>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .underMENU {
+            transition: all 500ms ease !important;
+        }
+
+        @media screen and (max-width: 591px) {
+            .headSubMENU {  /* SCROLLING TEXT */
+                float: none;
+                margin-top: 98px;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            h1 {
+                font-size: x-large;
+            }
+
+            h2 {
+                font-size: large;
+            }
+
+            .underMENU {
+                margin-right: 0px !important;
+
+                -webkit-transform: scale(0.7);
+                -moz-transform: scale(0.7);
+                transform: scale(0.7);
+            }
+
+            .button01 {
+                margin-left: 150px !important;
+            }
+
+            .button02 {
+                margin-left: -100px !important;
+            }
+        }
+
+        @media screen and (max-width: 671px) {
+            .headSubMENU {  /* SCROLLING TEXT */
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 412px) {
+            .centerDIV {
+                position: fixed !important;
+                display: block;
+                margin-top: 0% !important;
+                left: 0% !important; right: 95% !important;
+            }
+
+            .button01 {
+                position: relative !important;
+                margin-top: 10% !important;
+                left: 200% !important; right: 0% !important;
+            }
+
+            .button02 {
+                position: relative !important;
+                display: block !important;
+                margin-top: -50px !important;
+                left: 200% !important; right: 0% !important;
+            }
+
+            @media screen and (max-width: 320px) {
+                h1 {
+                    font-size: 22px !important;
+                }
+                
+                h2 {
+                    font-size: 14px !important;
+                }
+
+                .button01 {
+                    position: relative !important;
+                    margin-top: 10% !important;
+                    left: 155% !important; right: 0% !important;
+                }
+
+                .button02 {
+                    position: relative !important;
+                    display: block !important;
+                    margin-top: -50px !important;
+                    left: 175% !important; right: 0% !important;
+                }
+            }
+        }
+
+        .centerDIV {
+            position: absolute;
+            top: 40%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+
+            margin: auto;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="headMENU">
+        <a href="../homepage" class="logo"> <img src="../../imgs/nineLOGO.png" alt="[9] certifiedBAKA" width="200px" height="35px" title="（９） 認定されたばか"> </a>
+        <div class="headMENU-R headMENUalt">
+            <a href="../homepage" title=">> homePage"> homePage </a>
+            <a href="../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
+            <a class="active" href="javascript:alert('[ i ]  you are currently on this subpage !!')" title="[ i ] you are here"> aboutPage </a>
+        </div>
+        <div class="headSubMENU" title="[ i ] liveSTATUS">
+            <div class="headSubMENU headSubMenuGRAD">
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; aboutPAGE -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> you are currently viewing: about this project webpage </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> this website was initially built for ICT#midTerm02 </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> currently viewing: aboutPage </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    [A] aboutPage
+                    [A] aboutPage
+                    [A] aboutPage
+                    [A] aboutPage
+                    [A] aboutPage
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="underMENU centerDIV">
+        <div style="white-space: nowrap; text-align: center;">
+            <h1 style="color: cornflowerblue;"> about this website project ..</h1>
+            <h2 style="padding-top: 15px;"> author of the project: Islam Yermek [IT2-2210] </h2>
+            <h3 style="padding-top: 10px;"> was made initially for ICT#midTerm02 </h3>
+        </div>
+
+        <div class="buttonALLIGN" style="padding-top: 15px; position: relative; left: 50%; margin-left: -100px;">
+            <a href="https://vk.com/sub2pew" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to open this link ?')" target="_blank"> <button class="buttonNAV button01" style="position: absolute; margin-left: 200px;"> vkontakteWEB </button> </a>
+            <a href="https://telegram.me/sub2pew" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to open this link ?')" target="_blank"> <button class="buttonNAV button02" style="position: absolute; margin-left: -200px;"> telegramWEB </button> </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> @zhalgas </title>
+
+    <link rel="stylesheet" href="../../../style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/membersStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/scrollBAR.css" type="text/css">
+
+    <link rel="icon" href="../../../favicon/nine9.png" type="image/png">
+
+    <script type="text/javascript" src="../../../script/changeTEXT.js"> </script>
+    <script type="text/javascript" src="../../../script/replyPOST.js"> </script>
+    <script type="text/javascript" src="../../../script/userInfo/userInfoZHALGAS.js"> </script>
+    <script type="text/javascript" src="../../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../../script/currentTime.js"> </script>
+
+    <style>
+        h1, h2, h3 {
+        margin-left: 25px;
+        margin-right: 25px;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="headMENU">
+        <a href=".." class="logo"> <img src="../../../imgs/membersBAKA.png" alt="[9] membersBAKA" width="200px" height="35px" title=" ( 9 )  membersBAKA"> </a>
+        <div class="headMENU-R headMENUalt">
+            <a href="../../homepage" title=">> homePage"> homePage </a>
+            <a href="../../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
+            <a href="../../about" title=">> aboutPage"> aboutPage </a>
+        </div>
+        <div class="headSubMENU" title="[ i ] liveSTATUS">
+            <div class="headSubMENU headSubMenuGRAD">
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; profilePAGE -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> currently viewing user's profile webpage </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> profile webpage: @zhalgas </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> browsing user profile webpage </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    @zhalgas
+                    @zhalgas
+                    @zhalgas
+                    @zhalgas
+                    @zhalgas
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="underMENU">
+        <div style="white-space: nowrap">
+            <h1> <a href=".."> profiles </a> </h1>
+            <h2 style="padding-left: 65px; padding-bottom: 5px;"> └────────── <a href="javascript:window.location.href=window.location.href"> <span style="color: rgb(114, 213, 250)"> @zhalgas </span> </a> </h2>
+            <h3 style="padding-left: 265px;"> └────────── accountPage </h3>
+
+            <div style="padding: 10px;"> </div>
+            
+            <h3 style="padding-left: 25px;"> recently posted posts: </h3>
+            <h4 style="color: rgb(120, 120, 120); padding: 0px; padding-left: 365px; margin-top: -10px; position: absolute; opacity: 50%;"> last seen: [Dec 13, 2022] </h4>
+        </div>
+
+        <!-- ADD SPACE BETWEEN <H4> AND POSTS SECTION -->
+        <div style="padding: 5px;"> </div>
+
+        <div class="textBORDERquickView" style="width: 300px; float: right;">
+            <div class="postHEAD paragraphMARGIN">
+                <p style="color: gray"> <span style="color: darkturquoise;"> userINFO </span> </p>
+            </div>
+            <div class="borderLINE" style="float: right; height: 75%"> </div>
+                <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                    <div style="padding-left: 35px">
+                        <p style="cursor: help;"> <span> <a onclick="userINFO01()"> [ i ]&nbsp;&nbsp;profileBIO </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="userINFO02()"> [ i ]&nbsp;&nbsp;userType </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="userINFO03()"> [ i ]&nbsp;&nbsp;registrationDate </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="userINFO04()"> [ i ]&nbsp;&nbsp;totalPosts </a> </span> </p>
+                    </div>
+                </p>
+        </div>
+
+        <div id="postsBOX">
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <div class="toolTIP" style="float: right;"> <!-- NSFW TAG -->
+                            <a> <span class="postTagNSFW" style="float: right;"> NSFW </span> </a>
+                            <span class="toolTIPtxt" style="margin-left: -69px; margin-bottom: 15px;"> strong language </span> 
+                        </div>
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(114, 213, 250);">@zhalgas</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 13, 2022 : 01:45 AM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        Kanye West - Power (Audio)
+                        <span class="mediaPOST"> <br>
+                            <video src="../../../media/postMEDIA/vid/zhalgas/zhalgasP04.mp4" preload="metadata" controls class="mediaROUNDED" style=" width: 450px; vertical-align: top;" alt="zhalgasP04.mp4"> notSupportedVIDEO </video>
+                        </span> <br>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST04()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments04" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT04()"> <span id="subCOM04X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT04()"> <span id="subCOMshow04" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM04" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY04()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(114, 213, 250);">@zhalgas</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 13, 2022 : 02:02 AM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        Ерболат - Біздің Жігіттер [2009]
+                        <span class="mediaPOST"> <br>
+                            <video src="../../../media/postMEDIA/vid/zhalgas/zhalgasP03.mp4" preload="metadata" controls class="mediaROUNDED" style=" width: 450px; vertical-align: top;" alt="zhalgasP03.mp4"> notSupportedVIDEO </video>
+                        </span> <br>
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST03()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments03" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT03()"> <span id="subCOM03X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT03()"> <span id="subCOMshow03" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM03" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY03()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(114, 213, 250);">@zhalgas</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 12, 2022 : 07:20 PM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        Біздің жігіттер, жігіттер, жігіттер, <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер, <br>
+                        Арландай, тарландай біздің жігіттер <br>
+                        Міне міне .............. оу оу....... <br>
+                        біздің жігіттер жігіттер жігіттер <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер <br>
+                        Сегіз қырлы, бір сырлы біздің жігііттер <br>
+                        Міне біздің жігіттер, жігіттер, жігіттер, <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер, <br>
+                        Арландай, тарландай біздің жігіттер <br>
+                        Міне міне <br> <br>
+
+                        Үлкен кіші алыс жақын туыс бауыр ағайын <br>
+                        Шын көңілмен мен сіздерге айтамын <br>
+                        Казіргінің жігіттері уоу толайын <br>
+                        Біздің жігіттерге жырдан асыл алқа тағайын <br>
+                        Таныс әлде бейтаныс па бәрібір <br>
+                        Үлкенге де кішіге де сый құрмет сәлем бір <br>
+                        Өз ана тілін қастерлеген ардақтап таныта білген бір сырымен сегіз қыры <br>
+                        Қазағымның жігіттері кейде ммм кейде қарапайым <br>
+                        Жігітке тән сән жыр жазайын <br>
+                        Байсалдылық, сабырлық жігітке сән <br>
+                        кейде жібермес намыс бар дос бауыр ағайын <br>
+
+                        Ей! Арулар қадірлендер жігіттерді <br>
+                        Бұл жігіттер жалғамақ үміттерді <br>
+                        Мұз болып қалған жүректі жібітеді <br>
+                        Жазып қалған көңілді үгітеді <br>
+                        Туған туыс жақыннан алыс кетіп сапқа тұрып сарбаз боп әскерге өтіп <br>
+                        Борышын өтеп адалдық намысымен қуанышпен сағыныштың желі есіп <br>
+                        Сабыр сақтап зұлымдыққа моымай <br>
+                        Жармассада жау жағаға жазымай <br>
+                        Отан үшін жаны құрбан жігіттер <br>
+                        Жау алдында қабырғасы майыспай <br>
+
+                        Біздің жігіттер, жігіттер, жігіттер, <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер, <br>
+                        Арландай, тарландай біздің жігіттер <br>
+                        Міне міне .............. оу оу....... <br>
+                        біздің жігіттер жігіттер жігіттер <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер <br>
+                        Сегіз қырлы, бір сырлы біздің жігііттер <br>
+                        Міне біздің жігіттер, жігіттер, жігіттер, <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер, <br>
+                        Арландай, тарландай біздің жігіттер <br>
+                        Міне міне <br> <br>
+
+                        Алматының жігіттері арлан екен, <br>
+                        Талдықорған жігіттері тарлан екен, <br>
+                        Тараздың жігіттері жайсан болса, <br>
+                        Қарағанды жігіттер қайсар екен, <br>
+                        Шымкенттің жігіттері шымыр болса, <br>
+                        Атыраудың жігіттері арман екен <br>
+                        Өскеменнің жігіттері өрең болса <br>
+                        Ақтөбенің жігіттері алып екен, <br>
+                        Жезқазғанның жігіттері жез таңдай, <br>
+                        Қызыл жар жігіттері кең маңдай, <br>
+                        Зайсанның жігіттері білекті <br>
+                        Семей жігіттері болаттай <br>
+                        Қызылорда жігіттері қыран болса, <br>
+                        Оралымның жігіттері пырақ екен, <br>
+                        Ақтаудың жігіттері асыл болса, <br>
+                        Астананың жігітттері жомарт екен, <br>
+                        Көкшетаудың жігіттері көсем дейді, <br>
+                        Қостанайдың жігіттері шешен дейді, <br>
+                        Аягөздің жігіттері төре болса, <br>
+                        Түркістанның жігіттері имам дейді, <br>
+                        Павлодар жігіттері бапшы екен, <br>
+                        Нарыңқолдың жігіттері сақшы екен, <br>
+                        Тыңдаушы құлақтарға алтын сырға, <br>
+                        Жігіттерім сегіз қырлы, бір сырлы екен <br>
+
+                        Біздің жігіттер, жігіттер, жігіттер, <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер, <br>
+                        Арландай, тарландай біздің жігіттер <br>
+                        Міне міне .............. оу оу....... <br>
+                        біздің жігіттер жігіттер жігіттер <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер <br>
+                        Сегіз қырлы, бір сырлы біздің жігііттер <br>
+                        Міне біздің жігіттер, жігіттер, жігіттер, <br>
+                        Міне жігіттер керемет жігіттер <br>
+                        Мына біз жігіттер, жігіттер, жігіттер, <br>
+                        Арландай, тарландай біздің жігіттер <br>
+                        Міне міне .............. оу оу.......
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM02" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: rgb(114, 213, 250);">@zhalgas</a>
+                                    <span class="toolTIPtxt" style="margin-left: -45px"> member </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 08, 2022 : 10:23 PM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        Бүл сайттын қазақша нұсқасы бар ма?? Адамнын басын ауыртып жіберді ғой осы ағылшын тілі..
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST01()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments01" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT01()"> <span id="subCOM01X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT01()"> <span id="subCOMshow01" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM01" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY01()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

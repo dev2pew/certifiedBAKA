@@ -1,0 +1,41 @@
+/* ALT STYLE SHEET FILE FOR WOFF/WOFF2 FONTS */
+
+@font-face {
+    font-family: 'consolasregular';
+    src: url('../fonts/woff/consolas/consola-webfont.woff2') format('woff2'),
+         url('../fonts/woff/consolas/consola-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'consolasbold';
+    src: url('../fonts/woff/consolas/consolab-webfont.woff2') format('woff2'),
+         url('../fonts/woff/consolas/consolab-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'consolasitalic';
+    src: url('../fonts/woff/consolas/consolai-webfont.woff2') format('woff2'),
+         url('../fonts/woff/consolas/consolai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'consolasbold_italic';
+    src: url('../fonts/woff/consolas/consolaz-webfont.woff2') format('woff2'),
+         url('../fonts/woff/consolas/consolaz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a, h1, h2, h3, h4, h5, h6, p, ul, li, dd, span, button, marquee {
+    font-family: Consolas;
+}

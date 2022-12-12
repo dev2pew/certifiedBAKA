@@ -1,0 +1,23 @@
+/* CUSTOM SCROLLBAR STYLE */
+
+::-webkit-scrollbar {   /* SCROLLBAR WIDTH */
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {     /* SCROLLBAR AREA */
+    background: rgb(40, 45, 55);
+}
+
+::-webkit-scrollbar-thumb {     /* SCROLLBAR */
+    background: rgb(50, 55, 65);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgb(40, 45, 55);
+}
+
+::-webkit-scrollbar-thumb:hover {   /* SCROLLBAR HANDLE ON HOVER */
+    background: rgb(70,75, 85);
+}
