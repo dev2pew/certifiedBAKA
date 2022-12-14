@@ -166,6 +166,10 @@ img, video {
     .postBOTTOM {
         padding-top: 5px !important;
     }
+
+    .mediaPOST video {
+        width: 90% !important;
+    }
 }
 
 @media screen and (min-width: 712px) {  /* HIDE PROBLEMATIC ELEMENT ON SMALL SCREENS */
@@ -612,6 +616,12 @@ img, video {
 
     font-weight: bold;
     font-size: 10px;
+}
+
+.postTagPINNED {
+    /* opacity: 10%; */
+    border-color: rgb(115, 190, 255);
+    background-color: rgb(115, 190, 255);
 }
 
 .postDate {

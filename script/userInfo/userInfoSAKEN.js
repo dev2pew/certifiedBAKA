@@ -1,7 +1,7 @@
 // userINFO text alert messages
 
 function userINFO01() {
-    alert("[ i ]  bio#saken\nstatus message");
+    alert("[ i ]  bio#saken\nbusy right now...");
 }
 
 function userINFO02() {
@@ -13,5 +13,5 @@ function userINFO03() {
 }
 
 function userINFO04() {
-    alert("[ i ]  user.infoBOX\nuser.totalSubmittedPOSTS  ::  XX");
+    alert("[ i ]  user.infoBOX\nuser.totalSubmittedPOSTS  ::  02");
 }

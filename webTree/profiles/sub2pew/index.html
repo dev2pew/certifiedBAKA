@@ -33,11 +33,11 @@
 
 <body>
     <div class="headMENU">
-        <a href=".." class="logo"> <img src="../../../imgs/membersBAKA.png" alt="[9] membersBAKA" width="200px" height="35px" title=" ( 9 )  membersBAKA"> </a>
+        <a href="../index.html" class="logo"> <img src="../../../imgs/membersBAKA.png" alt="[9] membersBAKA" width="200px" height="35px" title=" ( 9 )  membersBAKA"> </a>
         <div class="headMENU-R headMENUalt">
-            <a href="../../homepage" title=">> homePage"> homePage </a>
-            <a href="../../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
-            <a href="../../about" title=">> aboutPage"> aboutPage </a>
+            <a href="../../homepage/index.html" title=">> homePage"> homePage </a>
+            <a href="../../../webTree/funstuff/index.html" title=">> funSTUFF"> funSTUFF </a>
+            <a href="../../about/index.html" title=">> aboutPage"> aboutPage </a>
         </div>
         <div class="headSubMENU" title="[ i ] liveSTATUS">
             <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
@@ -59,7 +59,7 @@
 
     <div class="underMENU">
         <div style="white-space: nowrap">
-            <h1> <a href=".."> profiles </a> </h1>
+            <h1> <a href="../index.html"> profiles </a> </h1>
             <h2 style="padding-left: 65px; padding-bottom: 5px;"> └────────── <a href="javascript:window.location.href=window.location.href"> <span style="color: aqua"> @sub2pew </span> </a> </h2>
             <h3 style="padding-left: 270px;"> └────────── accountPage </h3>
 
@@ -88,6 +88,66 @@
         </div>
 
         <div id="postsBOX">
+                        <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:window.location.href=window.location.href" style="color: aliceblue;">@template</a>
+                                    <span class="toolTIPtxt" style="margin-left: -50px"> mod-user </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [MMM DD, YYYY : HH:MM AM/PM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        things are going pretty smoothly by now... <br> <br>
+                        I've been working on <span><a href="../../funstuff/index.html" target="_blank">funSTUFF</a></span> recently and encountered
+                        several performance issues when displaying too much
+                        images at once. some of them were in high quality xD. <br> <br>
+
+                        now imagine if a mid-end device was on that page... man
+                        it would be a disaster, if we count that my laptop was slightly
+                        lagging on that page. <br> <br>
+
+                        luckily I've found a solution for this, use a lower quality
+                        thumbnails! but I have to create them manually. so yeah, kinda sucks. <br> <br>
+
+                        I'm currently writing this on the train, on the way to my hometown.
+                        holidays have began early than expected meaning now I have 2 months of free time!! <br> <br>
+
+                        isn't it wonderful?
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST04()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments04" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT04()"> <span id="subCOM04X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT04()"> <span id="subCOMshow04" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM04" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY04()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="textBORDER" style="float: left; width: 550px;">
                     <div class="postHEAD paragraphMARGIN">
                         <p style="color: gray">
@@ -104,24 +164,24 @@
                     </div>
                     <div class="borderLINE" style="float: left; height: 75%;"> </div>
                     <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
-                        it's been awhile since I started working <br>
-                        on this project... honestly, it's more time <br>
+                        it's been awhile since I started working
+                        on this project... honestly, it's more time
                         consuming than I have thought.. so yeah... <br> <br>
-                        but I don't going to give up! I will finish <br>
-                        this project and get the maximum score!! <br>
+                        but I don't going to give up! I will finish
+                        this project and get the maximum score!!
                         it's going to be so fun and cool!!
                     </p>
-                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
-                <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST03()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments03" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
                     <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
                         <span class="toolTIP toolTIPalt">
-                            <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                            <a onclick="hideCOMMENT03()"> <span id="subCOM03X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
                         </span>
                         <span class="toolTIP" style="margin-left: -9px;">
-                            <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                            <a onclick="showCOMMENT03()"> <span id="subCOMshow03" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
                         </span>
                     </p>
-                    <div id="subCOM02" class="postCOMMENTS">
+                    <div id="subCOM03" class="postCOMMENTS">
                         <p style="color: gray">
                             <span style="color: cornflowerblue;">
                                 <span class="toolTIP oneComment">
@@ -129,7 +189,7 @@
                                     <span class="toolTIPtxt"> username </span>
                                 </span>
                             </span> ::  <span class="commentCONTENT toolTIP">
-                                            <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <a onclick="showREPLY03()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
                                             <span class="toolTIPtxt"> click to read.. </span>
                                         </span>
                         </p>
@@ -170,17 +230,17 @@
                         steamMAIN&nbsp;&nbsp;::&nbsp;<span><a href="https://steamcommunity.com/profiles/76561198875120471" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to open this link ?')" target="_blank">@sub2pew</a></span> <br>
                     </p>
                 </div>
-                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST01()"> [&gt;] write a comment.. </a> </span> </p>
-                <div id="comments01" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
                     <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
                         <span class="toolTIP toolTIPalt">
-                            <a onclick="hideCOMMENT01()"> <span id="subCOM01X" style="color: tomato">[X]</span> </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                            <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span> </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
                         </span>
                         <span class="toolTIP" style="margin-left: -9px;">
-                            <a onclick="showCOMMENT01()"> <span id="subCOMshow01" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                            <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
                         </span>
                     </p>
-                    <div id="subCOM01" class="postCOMMENTS">
+                    <div id="subCOM02" class="postCOMMENTS">
                         <p style="color: gray">
                             <span style="color: cornflowerblue;">
                                 <span class="toolTIP oneComment">
@@ -188,7 +248,7 @@
                                     <span class="toolTIPtxt"> username </span>
                                 </span>
                             </span> ::  <span class="commentCONTENT toolTIP">
-                                            <a onclick="showREPLY01()" style="color: rgb(150, 150, 150);"> [ .. ] commentTEXT </a>
+                                            <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ .. ] commentTEXT </a>
                                             <span class="toolTIPtxt"> click to read.. </span>
                                         </span>
                         </p>
@@ -215,9 +275,9 @@
                     my name is Islam and I'm studying at International Information Technology University, or shortly IITU. <br> <br>
                     everyone calls me "Isa" or sometimes even "Isko". I turned 18 recently and lost my phone, yeah.. <br> <br>
                     <span class="textSPOILER">
-                        it was Samsung Galaxy S21 FE Edition which <br>
-                        had Snapdragon 888 chip with 256 GB built-in memory <br>
-                        and 8 GB of RAM. I loved this phone so much. <br>
+                        it was Samsung Galaxy S21 FE Edition which
+                        had Snapdragon 888 chip with 256 GB built-in memory
+                        and 8 GB of RAM. I loved this phone so much.
                         I stored all my photos and other data on this phone, and now it's all gone, lost.. forever...
                     </span>
                 </p>
