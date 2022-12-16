@@ -13,5 +13,5 @@ function userINFO03() {
 }
 
 function userINFO04() {
-    alert("[ i ]  user.infoBOX\nuser.totalSubmittedPOSTS  ::  03");
+    alert("[ i ]  user.infoBOX\nuser.totalSubmittedPOSTS  ::  04");
 }
