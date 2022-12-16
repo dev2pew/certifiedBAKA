@@ -188,7 +188,7 @@ img, video {
 }
 
 @keyframes pulseNotice {
-    from { opacity: 80%; color: white; }
+    from { opacity: 20%; color: white; }
     to { opacity: 100%; }
 }
 
@@ -318,6 +318,10 @@ img, video {
 
     animation-duration: 1250ms;
     animation-delay: 500ms;
+
+    position: absolute;
+    bottom: 15px;
+    right: 55px;
 }
 
 .headSubTXTscroll01 {   /* TEXT SCROLL ANIMATION */
