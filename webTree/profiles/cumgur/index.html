@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title> @cumgur </title>
 
     <link rel="stylesheet" href="../../../style/mainStyle.css" type="text/css">
@@ -111,31 +112,31 @@
                             </a>
                         </span> <br>
                 </p>
-            <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
-            <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
-                <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
-                    <span class="toolTIP toolTIPalt">
-                        <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
-                    </span>
-                    <span class="toolTIP" style="margin-left: -9px;">
-                        <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
-                    </span>
-                </p>
-                <div id="subCOM02" class="postCOMMENTS">
-                    <p style="color: gray">
-                        <span style="color: cornflowerblue;">
-                            <span class="toolTIP oneComment">
-                                <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
-                                <span class="toolTIPtxt"> username </span>
-                            </span>
-                        </span> ::  <span class="commentCONTENT toolTIP">
-                                        <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
-                                        <span class="toolTIPtxt"> click to read.. </span>
-                                    </span>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
                     </p>
+                    <div id="subCOM02" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
             <div class="textBORDER" style="float: left; width: 550px;">
                 <div class="postHEAD paragraphMARGIN">
@@ -184,6 +185,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- newPOST -->
         </div>
     </div>
 </body>
