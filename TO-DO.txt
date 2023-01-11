@@ -17,4 +17,4 @@ TO-DO: LIST FOR [9] CERTIFIED BAKA
         -   SOUNDTRACKS
         -   PLAYGROUND
 
-    [X] when preparing for WEB remove "/index.html" from entire project (Ctrl + Shift + FAVICON)
+    [X] when preparing for WEB remove "" from entire project (Ctrl + Shift + FAVICON)
