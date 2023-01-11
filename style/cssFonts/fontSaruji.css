@@ -1,0 +1,12 @@
+/* Saruji font */
+
+@font-face {
+    font-family: Saruji Regular;
+    src: url('../../fonts/ttf/saruji/yokomoji.otf') format("opentype");
+}
+
+@font-face {
+    font-family: Saruji Bold;
+    src: url('../../fonts/ttf/saruji/saruji.ttf');
+    font-weight: bold;
+}

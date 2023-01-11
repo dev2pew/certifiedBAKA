@@ -1,0 +1,25 @@
+/* Exo-2 font */
+
+@font-face {
+    font-family: Exo-2 Regular;
+    src: url('../../fonts/ttf/exo2/Exo2-Regular.ttf');
+}
+
+@font-face {
+    font-family: Exo-2 Bold;
+    src: url('../../fonts/ttf/exo2/Exo2-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Exo-2 Italic;
+    src: url('../../fonts/ttf/exo2/Exo2-Italic.ttf');
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: Exo-2 Bold Italic;
+    src: url('../../fonts/ttf/exo2/Exo2-BoldItalic.ttf');
+    font-style: italic, oblique;
+    font-weight: bold;
+}

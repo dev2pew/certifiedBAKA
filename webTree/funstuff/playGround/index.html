@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title> playGround </title>
+
+    <link rel="stylesheet" href="../../../style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/membersStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/scrollBAR.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/cssFonts/fontConsolas.css" type="text/css">
+
+    <link rel="icon" href="../../../favicon/funSTUFF.png" type="image/png">
+
+    <script type="text/javascript" src="../../../script/changeTEXT.js"> </script>
+    <script type="text/javascript" src="../../../script/replyPOST.template.js"> </script>
+    <script type="text/javascript" src="../../../script/quickViewPlayGROUNDtxt.js"> </script>
+    <script type="text/javascript" src="../../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../../script/currentTime.js"> </script>
+
+    <style>
+        h1, h2, h3 {
+        margin-left: 25px;
+        margin-right: 25px;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="headMENU">
+        <a href="../index.html" class="logo"> <img src="../../../imgs/membersBAKA.png" alt="[9] membersBAKA" width="200px" height="35px" title=" ( 9 )  membersBAKA"> </a>
+        <div class="headMENU-R headMENUalt">
+            <a href="../../homepage/index.html" title=">> homePage"> homePage </a>
+            <a class="active" href="../../../webTree/funstuff/index.html" title=">> funSTUFF"> funSTUFF </a>
+            <a href="../../about/index.html" title=">> aboutPage"> aboutPage </a>
+        </div>
+        <div class="headSubMENU" title="[ i ] liveSTATUS">
+            <div class="headSubMENU headSubMenuGRAD">
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; profilePAGE -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> got bored? then you've chosen the right place! </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> welcome to playGround! </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> have some MORE fun !!! </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    [P] playGround
+                    [P] playGround
+                    [P] playGround
+                    [P] playGround
+                    [P] playGround
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="underMENU">
+        <div style="white-space: nowrap">
+            <h1> <a href="../index.html"> funSTUFF </a> </h1>
+            <h2 style="padding-left: 65px; padding-bottom: 5px;"> └────────── <span style="color: aliceblue"> playGround </span> </h2>
+        </div>
+
+        <div class="textBORDERquickView" style="width: 300px; float: right;">
+            <div class="postHEAD paragraphMARGIN">
+                <p style="color: gray"> <span style="color: lightgreen;"> quickOverview </span> </p>
+            </div>
+            <div class="borderLINE" style="float: right; height: 75%"> </div>
+                <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                    <div style="padding-left: 35px">
+                        <p style="cursor: help;"> <span> <a onclick="quickTXT01()"> [i] about this project </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="quickTXT02()"> [i] table of contents </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="quickTXT03()"> [i] software used </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="quickTXT04()"> [?] who is chiruno </a> </span> </p>
+                        <p> <span> <a href="../../404/crash/index.html" onclick="audioWARN(); return confirm('[ ? ]  crashThisWebPAGE !!\ndo you really want to proceed ??');"> [!] crash this webpage!</a> </span> </p>
+                    </div>
+                </p>
+        </div>
+
+        <div id="postsBOX">
+            <div class="textBORDER" style="float: left; width: 550px;">
+                    <div class="postHEAD paragraphMARGIN">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP">
+                                    <a href="javascript:alert('[ i ]  this user is root-user ..')" style="color: rgb(195, 135, 255);">@root-user</a>
+                                    <span class="toolTIPtxt" style="margin-left: -60px;"> root-user </span>
+                                </span>
+                            </span> ::  <span class="postDate toolTIP">
+                                                [Dec 17, 2022 : 03:06 PM]
+                                            <span class="toolTIPtxt"> postDate </span>
+                                        </span>
+                        </p>
+                    </div>
+                    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        templatePostTXT
+                    </p>
+                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST01()"> [&gt;] write a comment.. </a> </span> </p>
+                <div id="comments01" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
+                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
+                        <span class="toolTIP toolTIPalt">
+                            <a onclick="hideCOMMENT01()"> <span id="subCOM01X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
+                        </span>
+                        <span class="toolTIP" style="margin-left: -9px;">
+                            <a onclick="showCOMMENT01()"> <span id="subCOMshow01" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
+                        </span>
+                    </p>
+                    <div id="subCOM01" class="postCOMMENTS">
+                        <p style="color: gray">
+                            <span style="color: cornflowerblue;">
+                                <span class="toolTIP oneComment">
+                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
+                                    <span class="toolTIPtxt"> username </span>
+                                </span>
+                            </span> ::  <span class="commentCONTENT toolTIP">
+                                            <a onclick="showREPLY01()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
+                                            <span class="toolTIPtxt"> click to read.. </span>
+                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- newPOST -->
+        </div>
+    </div>
+</body>
+</html>

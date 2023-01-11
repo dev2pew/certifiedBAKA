@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> test </title>
+
+    <style>
+        .textSPOILER {
+            background-color: rgb(35, 45, 55);
+            color: transparent;
+            transition: background-color 250ms;
+            transition: color 250ms;
+        }
+
+        .textBORDERin .textSPOILER {
+            background-color: rgb(30, 40, 50);
+            color: transparent;
+            transition: background-color 250ms;
+            transition: color 250ms;
+        }
+
+        .textSPOILER:hover {
+            background-color: inherit;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <p> some text text text <span class="textSPOILER"> spoiler text </span> </p>
+</body>
+</html>

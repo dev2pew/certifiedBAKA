@@ -1,11 +1,25 @@
-/*  MADE BY ISLAM YERMEK
-    ALSO KNOWS AS SUB2PEW
-    THIS FILE IS A CSS/STYLESET
+/*  WRITTEN BY SUB2PEW..
+    CSS STYLE SHEET FILE
 */
 
 @font-face {
-    font-family: Consolas;
+    font-family: Consolas Regular;
     src: url('../fonts/ttf/consolas/consola.ttf');
+}
+
+@font-face {
+    font-family: Exo-2 Regular;
+    src: url('../fonts/ttf/exo2/Exo2-Regular.ttf');
+}
+
+@font-face {
+    font-family: Saruji Regular;
+    src: url('../fonts/otf/saruji/yokomoji.otf') format("opentype");
+}
+
+@font-face {
+    font-family: Meiryo Regular;
+    src: url('../fonts/ttc/meiryo/meiryo.ttc') format("opentype");
 }
 
 body {
@@ -18,8 +32,8 @@ body {
     padding: 0px;
 }
 
-a, h1, h2, h3, h4, h5, h6, p, ul, li, dd, span, button, marquee {
-    font-family: Consolas;
+a, h1, h2, h3, h4, h5, h6, p, ul, li, dd, span, button, marquee, table, thead, tbody, tr, th {
+    font-family: Consolas Regular;
     color: rgba(255, 255, 255, 0.950);
 
     /* PREVENT TEXT SELECTING/HIGHLIGHTING */
@@ -625,6 +639,12 @@ img, video {
     background-color: rgb(115, 190, 255);
 }
 
+.postTagORDER {
+    /* opacity: 10%; */
+    border-color: rgb(90, 205, 180);
+    background-color: rgb(90, 205, 180);
+}
+
 .postDate {
     color: rgb(100, 100, 100);
     transition: color 250ms;
@@ -765,4 +785,53 @@ img, video {
     outline-color: #ffffff8c;
 
     font-weight: bold;
+}
+
+.gradLinkSPECIAL {
+    background-image: repeating-linear-gradient(to left, aqua, lightblue, cyan);
+    background-clip: unset;
+    background-size: 999% 999%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientSCROLL 3s ease infinite;
+}
+
+table { margin-right: 15px; margin-bottom: 10px;}
+
+table, thead, tbody, tr, th {
+    font-size: 15px;
+    color: rgba(175, 175, 175, 0.95);
+}
+
+thead:hover, tr:hover, th:hover, td:hover {
+    opacity: 85%;
+}
+
+table, thead {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(35, 45, 55, 0.55);
+
+    background-color: rgba(35, 45, 55, 0.55);
+    text-align: center;
+}
+
+tbody, tr {}
+
+th {
+    background-color: rgba(35, 45, 55, 0.55);
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fontSaruji * {
+    font-family: Saruji Regular !important;
+    font-weight: bold;
+}
+
+.fontMeiryo * {
+    font-family: Meiryo Regular !important;
 }

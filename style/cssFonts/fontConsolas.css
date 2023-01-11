@@ -1,0 +1,25 @@
+/* Consolas font */
+
+@font-face {
+    font-family: Consolas Regular;
+    src: url('../../fonts/ttf/consolas/consola.ttf');
+}
+
+@font-face {
+    font-family: Consolas Bold;
+    src: url('../../fonts/ttf/consolas/consolab.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Consolas Italic;
+    src: url('../../fonts/ttf/consolas/consolai.ttf');
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: Consolas Bold Italic;
+    src: url('../../fonts/ttf/consolas/consolaz.ttf');
+    font-style: italic, oblique;
+    font-weight: bold;
+}

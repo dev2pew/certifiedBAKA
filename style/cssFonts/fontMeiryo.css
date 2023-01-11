@@ -1,0 +1,12 @@
+/* Meiryo font */
+
+@font-face {
+    font-family: Meiryo Regular;
+    src: url('../../fonts/ttc/meiryo/meiryo.ttc') format("opentype");
+}
+
+@font-face {
+    font-family: Meiryo Bold;
+    src: url('../../fonts/ttc/meiryo/meiryob.ttc');
+    font-weight: bold;
+}
