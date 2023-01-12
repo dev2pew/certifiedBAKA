@@ -5,7 +5,7 @@ function quickTXT01() {
 }
 
 function quickTXT02() {
-    alert("[ i ]  tableOfCONTENTS\n[01] homePAGE  ::  [02] funSTUFF  ::  [03] aboutPage\n[01.sub] + [02.sub] -- quickOverview\n\n[04] profiles\n[04.01] profiles.sub2pew  ::  [04.02] profiles.shaGGy\n[04.03] profiles.cumgur  ::  [04.04] profiles.chigurh");
+    alert("[ i ]  tableOfCONTENTS\n[ 01 ]  homePAGE  ::  [ 02 ]   funSTUFF  ::  [ 03 ]   aboutPage\n\n[ i ]  subPages\n[01.01] membersBAKA  ::  [01.02] featuredPosts\n[02.01] eAmusement  ::  [02.02] videos&movies\n[02.03] images&GIFs  ::  [02.04] soundtracks\n[02.05] playGround\n\n[ 04 ]   profiles\n[04.01] profiles.sub2pew  ::  [04.02] profiles.shaGGy\n[04.03] profiles.zhalgas  ::  [04.04] profiles.king\n[04.05] profiles.saken  ::  [04.06] profiles.cumgur\n[04.07] profiles.azret  ::  [04.08] profiles.chigurh\n[04.09] profiles.template");
 }
 
 function quickTXT03() {
