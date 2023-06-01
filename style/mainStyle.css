@@ -3,22 +3,22 @@
 */
 
 @font-face {
-    font-family: Consolas Regular;
+    font-family: 'Consolas Regular';
     src: url('../fonts/ttf/consolas/consola.ttf');
 }
 
 @font-face {
-    font-family: Exo-2 Regular;
+    font-family: 'Exo-2 Regular';
     src: url('../fonts/ttf/exo2/Exo2-Regular.ttf');
 }
 
 @font-face {
-    font-family: Saruji Regular;
+    font-family: 'Saruji Regular';
     src: url('../fonts/otf/saruji/yokomoji.otf') format("opentype");
 }
 
 @font-face {
-    font-family: Meiryo Regular;
+    font-family: 'Meiryo Regular';
     src: url('../fonts/ttc/meiryo/meiryo.ttc') format("opentype");
 }
 
@@ -32,8 +32,8 @@ body {
     padding: 0px;
 }
 
-a, h1, h2, h3, h4, h5, h6, p, ul, li, dd, span, button, marquee, table, thead, tbody, tr, th {
-    font-family: Consolas Regular;
+a, h1, h2, h3, h4, h5, h6, p, ul, li, dd, /* span, */ button, marquee, table, thead, tbody, tr, th {
+    font-family: 'Consolas Regular', Arial, sans-serif; /* FALLBACK FONT IS ARIAL */
     color: rgba(255, 255, 255, 0.950);
 
     /* PREVENT TEXT SELECTING/HIGHLIGHTING */
@@ -415,10 +415,16 @@ img, video {
 
 #changeTXT01:hover {
     opacity: 55%;
+
+    color: rgba(100, 150, 235, 0.55);
+    transition: color 0ms;
 }
 
 #changeTXT02:hover {
     opacity: 55%;
+
+    color: rgba(100, 150, 235, 0.55);
+    transition: color 0ms;
 }
 
 .imgRES {       /* PLACE IMAGE AT CENTER */
@@ -438,6 +444,8 @@ img, video {
 }
 
 .toolTIP .toolTIPtxt {  /* TOOLTIP TEXT */
+    font-family: 'Consolas Regular', Arial, sans-serif;
+
     visibility: hidden;
     width: auto;
     background-color: #555;
@@ -555,16 +563,6 @@ img, video {
     margin-bottom: -170px;
 }
 
-#changeTXT01:hover {
-    color: rgba(100, 150, 235, 0.55);
-    transition: color 0ms;
-}
-
-#changeTXT02:hover {
-    color: rgba(100, 150, 235, 0.55);
-    transition: color 0ms;
-}
-
 .borderLINE { /* bookmark */
     border-left: 0.45em solid white;
     border-radius: 25px;
@@ -631,6 +629,7 @@ img, video {
 
     font-weight: bold;
     font-size: 10px;
+    color: rgba(255, 255, 255, 0.950);
 }
 
 .postTagPINNED {
@@ -817,7 +816,7 @@ table, thead {
     text-align: center;
 }
 
-tbody, tr {}
+/* tbody, tr {} */
 
 th {
     background-color: rgba(35, 45, 55, 0.55);
@@ -828,10 +827,20 @@ th {
 }
 
 .fontSaruji * {
-    font-family: Saruji Regular !important;
+    font-family: 'Saruji Regular', Arial, sans-serif !important;
     font-weight: bold;
 }
 
 .fontMeiryo * {
-    font-family: Meiryo Regular !important;
+    font-family: 'Meiryo Regular', Arial, sans-serif !important;
+}
+
+#dialog p {
+    color: black !important;
+    font-size: 14px;
+}
+
+#dialog span {
+    color: black !important;
+    font-size: 14px;
 }

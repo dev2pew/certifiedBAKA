@@ -16,6 +16,27 @@
     <script type="text/javascript" src="../../script/playAUDIO.js"> </script>
     <script type="text/javascript" src="../../script/currentTime.js"> </script>
 
+    <!-- JQUERY LIBRARY STUFF -->
+    <script type="text/javascript" src="../../script/jqueryLIB/jquery.js"> </script>
+    <script type="text/javascript" src="../../script/jqueryLIB/jqueryUI.js"> </script>
+    <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.structure.css" type="text/css">
+    <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.theme.css" type="text/css">
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog({
+                width: 300,
+                height: 225,
+                resizable: false,
+                position: {
+                    my: "right bottom",
+                    at: "right bottom", 
+                    of: window
+                }
+                });
+                } );
+    </script>
+
     <style>
         body {
             overflow-x: hidden;
@@ -172,6 +193,10 @@
             <a href="https://vk.com/sub2pew" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to open this link ?')" target="_blank"> <button class="buttonNAV button01" style="position: absolute; margin-left: 200px;"> vkontakteWEB </button> </a>
             <a href="https://telegram.me/sub2pew" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to open this link ?')" target="_blank"> <button class="buttonNAV button02" style="position: absolute; margin-left: -200px;"> telegramWEB </button> </a>
         </div>
+    </div>
+
+    <div id="dialog" class="sampleDIALOG" title="aboutPage">
+        <p> welcome to aboutPage! Here you can see brief information about the creator and a website. Also, you can contact me if you would like to! You can resize & close this window by hitting the &apos;x&apos; button. This window was made via jquery! Try it, it is super convenient to use! :) </p>
     </div>
 </body>
 </html>

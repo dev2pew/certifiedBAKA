@@ -16,7 +16,7 @@
 
     <script type="text/javascript" src="../../../script/changeTEXT.js"> </script>
     <script type="text/javascript" src="../../../script/replyPOST.js"> </script>
-    <script type="text/javascript" src="../../../script/userInfo/userInfoSUB2PEW.js"> </script>
+    <script type="text/javascript" src="../../../script/userInfo/userInfoGLOBAL.js"> </script>
     <script type="text/javascript" src="../../../script/playAUDIO.js"> </script>
     <script type="text/javascript" src="../../../script/currentTime.js"> </script>
 
@@ -68,7 +68,7 @@
             <div style="padding: 10px;"> </div>
             
             <h3 style="padding-left: 25px;"> recently submitted posts: </h3>
-            <h4 style="color: rgb(120, 120, 120); padding: 0px; padding-left: 365px; margin-top: -10px; position: absolute; opacity: 50%;"> last seen: [Jan 12, 2023] </h4>
+            <h4 style="color: rgb(120, 120, 120); padding: 0px; padding-left: 365px; margin-top: -10px; position: absolute; opacity: 50%;"> last seen: [Jun 02, 2023] </h4>
         </div>
 
         <!-- ADD SPACE BETWEEN <H4> AND POSTS SECTION -->
@@ -81,10 +81,10 @@
             <div class="borderLINE" style="float: right; height: 75%"> </div>
                 <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
                     <div style="padding-left: 35px">
-                        <p style="cursor: help;"> <span> <a onclick="userINFO01()"> [ i ]&nbsp;&nbsp;profileBIO </a> </span> </p>
-                        <p style="cursor: help;"> <span> <a onclick="userINFO02()"> [ i ]&nbsp;&nbsp;userType </a> </span> </p>
-                        <p style="cursor: help;"> <span> <a onclick="userINFO03()"> [ i ]&nbsp;&nbsp;registrationDate </a> </span> </p>
-                        <p style="cursor: help;"> <span> <a onclick="userINFO04()"> [ i ]&nbsp;&nbsp;totalPosts </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('sub2pew', 'bio')"> [ i ]&nbsp;&nbsp;profileBIO </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('sub2pew', 'userType')"> [ i ]&nbsp;&nbsp;userType </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('sub2pew', 'registrationDate')"> [ i ]&nbsp;&nbsp;registrationDate </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('sub2pew', 'totalPosts')"> [ i ]&nbsp;&nbsp;totalPosts </a> </span> </p>
                     </div>
                 </p>
 
@@ -111,6 +111,64 @@
                                 <span class="toolTIPtxt" style="margin-left: -55px"> mod-user </span>
                             </span>
                         </span> ::  <span class="postDate toolTIP">
+                                            [Jun 02, 2023 : 04:25 AM]
+                                        <span class="toolTIPtxt"> postDate </span>
+                                    </span>
+                    </p>
+                </div>
+                <div class="borderLINE" style="float: left; height: 75%;"> </div>
+                <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                    oh boy! it's going to be great! <br> <br>
+                    I have been working on my project since yesterday, and still wokring on it non-stop! <br> <br>
+                    I don't know why, but after finishing all my finals I suddenly had an urge to resume work on this website. <br> <br>
+                    this update is going to be massive compared to the other ones, because! .. <br> <br>
+                    <div class="textBORDERin">
+                        <div class="borderLINEin" style="float: left; height: 70%"> </div>
+                        <p style="font-size: 14px;">
+                            – fully reworked javascript for: <br>
+                            &emsp;&emsp;&emsp; ・ userINFOs <br>
+                            &emsp;&emsp;&emsp; ・ quickViewTXTs <br>
+                            &emsp;&emsp;&emsp; ・ commenting system <br>
+                            &emsp;&emsp;&emsp; ・ current time display <br> <br>
+
+                            – updated & added a new webpage: <br>
+                            &emsp;&emsp;&emsp; ・ <span><a href="../../funstuff/playGround">playGround</a></span> <br>
+                            &emsp;&emsp;&emsp; ・ <span><a href="../../funstuff/playGround/windows98">certifiedBAKA98</a></span> <br> <br>
+
+                            – code clean-up in some HTML files; <br> <br>
+                            – implemented pre-made libraries: <br>
+                            &emsp;&emsp;&emsp; ・ <span><a href="https://jquery.com/" target="_blank">jquery</a></span> <br>
+                            &emsp;&emsp;&emsp; ・ <span><a href="https://jqueryui.com/" target="_blank">jqueryUI</a></span> <br>
+                            &emsp;&emsp;&emsp; ・ <span><a href="https://jdan.github.io/98.css/" target="_blank">98.css</a></span> <br>
+                        </p>
+                    </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        I really liked playing around with libraries! they're convenientt to use, but sometimes they are problematic. <br> <br>
+                        So, that's all I wanted to share with you, my fellow reader! See you next time, and happy coding!
+                    </p>
+                </p>
+                <div id="replyBUTTON">
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span> <a onclick="replyPOST(4)"> [&gt;] write a comment.. </a> </span>
+                    </p>    
+                </div>
+                  <div id="repliesBLOCK4" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
+                    <div id="repliesSECTION4">
+                      <!-- user-comments -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="textBORDER" style="float: left; width: 550px;">
+                <div class="postHEAD paragraphMARGIN">
+                    <p style="color: gray">
+                        <span style="color: cornflowerblue;">
+                            <span class="toolTIP">
+                                <a href="javascript:window.location.href=window.location.href" style="color: aqua;">@sub2pew</a>
+                                <span class="toolTIPtxt" style="margin-left: -55px"> mod-user </span>
+                            </span>
+                        </span> ::  <span class="postDate toolTIP">
                                             [Dec 13, 2022 : 10:30 PM]
                                         <span class="toolTIPtxt"> postDate </span>
                                     </span>
@@ -119,7 +177,7 @@
                 <div class="borderLINE" style="float: left; height: 75%;"> </div>
                 <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
                     things are going pretty smoothly by now... <br> <br>
-                    I've been working on <span><a href="../../funstuff" target="_blank">funSTUFF</a></span> recently and encountered
+                    I've been working on <span><a href="../../funstuff">funSTUFF</a></span> recently and encountered
                     several performance issues when displaying too much
                     images at once. some of them were in high quality xD. <br> <br>
 
@@ -135,28 +193,14 @@
 
                     isn't it wonderful?
                 </p>
-                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST04()"> [&gt;] write a comment.. </a> </span> </p>
-                <div id="comments04" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
-                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
-                        <span class="toolTIP toolTIPalt">
-                            <a onclick="hideCOMMENT04()"> <span id="subCOM04X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
-                        </span>
-                        <span class="toolTIP" style="margin-left: -9px;">
-                            <a onclick="showCOMMENT04()"> <span id="subCOMshow04" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
-                        </span>
-                    </p>
-                    <div id="subCOM04" class="postCOMMENTS">
-                        <p style="color: gray">
-                            <span style="color: cornflowerblue;">
-                                <span class="toolTIP oneComment">
-                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
-                                    <span class="toolTIPtxt"> username </span>
-                                </span>
-                            </span> ::  <span class="commentCONTENT toolTIP">
-                                            <a onclick="showREPLY04()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
-                                            <span class="toolTIPtxt"> click to read.. </span>
-                                        </span>
-                        </p>
+                <div id="replyBUTTON">
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span> <a onclick="replyPOST(3)"> [&gt;] write a comment.. </a> </span>
+                    </p>    
+                </div>
+                <div id="repliesBLOCK3" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
+                    <div id="repliesSECTION3">
+                        <!-- user-comments -->
                     </div>
                 </div>
             </div>
@@ -184,30 +228,16 @@
                     this project and get the maximum score!!
                     it's going to be so fun and cool!!
                 </p>
-                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST03()"> [&gt;] write a comment.. </a> </span> </p>
-                <div id="comments03" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
-                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
-                        <span class="toolTIP toolTIPalt">
-                            <a onclick="hideCOMMENT03()"> <span id="subCOM03X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
-                        </span>
-                        <span class="toolTIP" style="margin-left: -9px;">
-                            <a onclick="showCOMMENT03()"> <span id="subCOMshow03" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
-                        </span>
-                    </p>
-                    <div id="subCOM03" class="postCOMMENTS">
-                        <p style="color: gray">
-                            <span style="color: cornflowerblue;">
-                                <span class="toolTIP oneComment">
-                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
-                                    <span class="toolTIPtxt"> username </span>
-                                </span>
-                            </span> ::  <span class="commentCONTENT toolTIP">
-                                            <a onclick="showREPLY03()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
-                                            <span class="toolTIPtxt"> click to read.. </span>
-                                        </span>
-                        </p>
-                    </div>
+                <div id="replyBUTTON">
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span> <a onclick="replyPOST(2)"> [&gt;] write a comment.. </a> </span>
+                    </p>    
                 </div>
+                  <div id="repliesBLOCK2" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
+                    <div id="repliesSECTION2">
+                      <!-- user-comments -->
+                    </div>
+                  </div>
             </div>
 
             <div class="textBORDER" style="float: left; width: 550px;">
@@ -243,30 +273,16 @@
                         steamMAIN&nbsp;&nbsp;::&nbsp;<span><a href="https://steamcommunity.com/profiles/76561198875120471" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to open this link ?')" target="_blank">@sub2pew</a></span> <br>
                     </p>
                 </div>
-                <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
-                <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
-                    <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
-                        <span class="toolTIP toolTIPalt">
-                            <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span> </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
-                        </span>
-                        <span class="toolTIP" style="margin-left: -9px;">
-                            <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
-                        </span>
-                    </p>
-                    <div id="subCOM02" class="postCOMMENTS">
-                        <p style="color: gray">
-                            <span style="color: cornflowerblue;">
-                                <span class="toolTIP oneComment">
-                                    <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
-                                    <span class="toolTIPtxt"> username </span>
-                                </span>
-                            </span> ::  <span class="commentCONTENT toolTIP">
-                                            <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ .. ] commentTEXT </a>
-                                            <span class="toolTIPtxt"> click to read.. </span>
-                                        </span>
-                        </p>
-                    </div>
+                <div id="replyBUTTON">
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span> <a onclick="replyPOST(1)"> [&gt;] write a comment.. </a> </span>
+                    </p>    
                 </div>
+                  <div id="repliesBLOCK1" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
+                    <div id="repliesSECTION1">
+                      <!-- user-comments -->
+                    </div>
+                  </div>
             </div>
 
             <div class="textBORDER" style="float: left; width: 550px;">

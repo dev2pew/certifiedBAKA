@@ -16,9 +16,9 @@
 
     <script type="text/javascript" src="../../script/changeTEXT.js"> </script>
     <script type="text/javascript" src="../../script/replyPOST.js"> </script>
-    <script type="text/javascript" src="../../script/quickViewTXT.js"> </script>
     <script type="text/javascript" src="../../script/playAUDIO.js"> </script>
     <script type="text/javascript" src="../../script/currentTime.js"> </script>
+    <script type="text/javascript" src="../../script/userInfo/userInfoGLOBAL.js"> </script>
 
     <style>
         h1, h2, h3 {
@@ -77,10 +77,10 @@
             <div class="borderLINE" style="float: right; height: 75%"> </div>
             <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
                 <div style="padding-left: 35px">
-                    <p style="cursor: help;"> <span> <a onclick="quickTXT01()"> [ i ]&nbsp;&nbsp;about this project </a> </span> </p>
-                    <p style="cursor: help;"> <span> <a onclick="quickTXT02()"> [ i ]&nbsp;&nbsp;table of contents </a> </span> </p>
-                    <p style="cursor: help;"> <span> <a onclick="quickTXT03()"> [ i ]&nbsp;&nbsp;software used </a> </span> </p>
-                    <p style="cursor: help;"> <span> <a onclick="quickTXT04()"> [ ? ]&nbsp;&nbsp;who is chiruno </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="getUserInfo('rootUSER', 'about')"> [ i ]&nbsp;&nbsp;about this project </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="getUserInfo('rootUSER', 'tableCONTENTS')"> [ i ]&nbsp;&nbsp;table of contents </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="getUserInfo('rootUSER', 'software')"> [ i ]&nbsp;&nbsp;software used </a> </span> </p>
+                    <p style="cursor: help;"> <span> <a onclick="getUserInfo('rootUSER', 'chiruno1'); getUserInfo('rootUSER', 'chiruno2')"> [ ? ]&nbsp;&nbsp;who is chiruno </a> </span> </p>
                     <p> <span> <a href="../404/crash" onclick="audioWARN(); return confirm('[ ? ]  crashThisWebPAGE !!\ndo you really want to proceed ??');"> [ ! ]&nbsp;&nbsp;crash this webpage!</a> </span> </p>
                 </div>
             </p>

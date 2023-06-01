@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
+    <title> certifiedBAKA98 </title>
+    
+    <link rel="stylesheet" href="../../../../style/windowsLIB/win98/windows98.css" type="text/css">
+    <link rel="icon" href="../../../../favicon/windows98.png" type="icon/png">
+
+    <script type="text/javascript" src="../../../../script/jqueryLIB/jquery.js"> </script>
+    <script type="text/javascript" src="../../../../script/jqueryLIB/jqueryUI.js"> </script>
+    <script defer type="text/javascript" src="../../../../script/windows98.js"> </script>
+    <script type="text/javascript" src="../../../../script/currentTime.js"> </script>
+    <script type="text/javascript" src="../../../../script/playAUDIO.js"> </script>
+
+
+    <style>
+        body {
+            overflow: hidden; /* hide scroll */
+            background-color: #008080;
+        }
+
+        img {
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none;
+        }
+
+        .taskbarWIN,
+        .openWIN,
+        .windows98 .title-bar-text, .window-body * {
+            -webkit-user-select: none; 
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .window-body .field-row, p, span, input { /* MOVE WINDOW CONTENTS AWAY FROM THE ICON */
+            margin-left: 80px;
+        }
+
+        .taskbarWIN {
+            position: fixed;
+            background-color: #bbc3c4;
+            color: #bbc3c4;
+            bottom: 0px;
+            left: 0px;
+
+            width: 100%;
+            height: 1.725rem;
+            max-width: 100%;
+
+            z-index: 5;
+            box-shadow: 0px -1px 0px #ffffff;
+            padding: 2px 0px;
+            display: flex;
+        }
+
+        #startMENU {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+
+            margin-bottom: 2rem;
+        }
+
+        .openWIN {
+            color: black;
+            background-image: url('../../../../imgs/windowsLIB/win98/png/windows-4.png');
+            background-repeat: no-repeat;
+            background-position: 5px;
+
+            font-weight: bold;
+            padding-left: 25.5px;
+
+            margin-left: 0.40rem;
+            position: absolute;
+            bottom: 0.255rem;
+            left: 0px;
+            z-index: 10;
+        }
+
+        .openWIN:active {
+            padding-left: 25.5px !important;
+        }
+
+        .windows98 { /* chatGPT */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .window-body .iconCONT { /* chatGPT ICON CONTAINER */
+            float: left;
+
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            
+            position:static;
+            padding: 0px 10px;
+        }
+
+        .window-body .iconSELF { /* chatGPT IMAGE ITSELF IN THE CONTAINER */
+            float: left;
+
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .windows98 .title-bar-text, .window-body * {
+            cursor: default;
+        }
+
+        .windows98 .title-bar-text {
+            font-size: 12px;
+            margin-left: 0.5rem;
+        }
+
+        .windows98 .window-body {
+            font-size: 0.825rem;
+            margin-left: 1.05rem;
+        }
+
+        .windows98 .window-body a:link {
+            color: blue;
+        }
+
+        .windows98 .window-body a:hover {
+            cursor: pointer;
+        }
+
+        .windows98 .window-body a:visited {
+            color: purple;
+        }
+
+        .windows98 .window-body a:active {
+            color: brown;
+        }
+
+        .startMENU a:link {
+            color: blue !important;
+        }
+
+        .startMENU a:hover {
+            color: blue !important;
+        }
+
+        .startMENU a:visited {
+            color: blue !important;
+        }
+        .startMENU a:active {
+            color: blue !important;
+        }
+
+        .startMENU button:hover {
+            background-color: #000080;
+            color: white !important;
+        }
+
+        .windows98 .title-bar-controls button {
+            width: 0.25rem;
+            height: 0.5rem;
+        }
+
+        .window p, span, button, label, section, input, p {
+            color: black !important;
+        }
+
+        .windowRIGHT {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+
+        .windowCENTER {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .startMENU p, span {
+            color: black;
+            font-size: 14.5px;
+            margin-left: 45px;
+        }
+
+        .startMENU button, button-pressed {
+            color: black;
+
+            border: none;
+            background: none;
+
+            width: 215px;
+            height: 42.5px;
+            margin-bottom: 2px;
+
+            display: flex;
+            flex-direction: column;
+
+            font-size: 0.925rem;
+        }
+
+        .startMENU .centeredBTN {
+            display: flex;
+            justify-content: center;
+            align-items: right;
+        }
+
+        .field-row {
+            margin-top: 0.75rem;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="windows98">
+        <div id="window1" class="window draggable" style="width: 450px;">
+            <div class="title-bar">
+                <div class="title-bar-text"> (9) certifiedBAKA </div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button id="closeWIN" aria-label="Close"></button>
+                    </div>
+                </div>
+            <div class="window-body">
+                <div class="iconCONT">
+                    <img src="../../../../imgs/windowsLIB/win98/png/file_windows-2.png" class="iconSELF" alt="windowsICON">
+                </div>
+                <p> welcome to funSTUFF! <br> <br>
+                    you are currently viewing: --- a windows98 .CSS based page! --- <br>
+                    by clicking on this <a href="https://jdan.github.io/98.css/" target="_blank">link</a> you can see & try the .CSS theme by yourself! </p>
+
+                <div class="field-row" style="width: 300px; margin-top: 1rem; margin-bottom: 1rem;">
+                    <label for="range25"> coolMeter: </label>
+                    <label for="range26"> sucks! </label>
+                    <input id="range26" type="range" min="1" max="11" value="6" />
+                    <label for="range27"> slaps! </label>
+                </div>
+
+                <div class="windowRIGHT">
+                    <input type="checkbox" id="checkBOX1">
+                    <label for="checkBOX1"> seems okay, alright! </label>
+                </div>
+
+                <section class="field-row" style="justify-content: flex-end;">
+                    <input id="submitWIN" type="submit" value="OK"/>
+                    <input type="reset" value="RESET"/>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <select style="margin-right: 6rem; position: absolute; bottom: 0.375rem; right: 0px; z-index: 10;">
+        <option selected> 9 - certifiedBAKA! </option>
+        <option> 5 - Incredible! </option>
+        <option> 4 - Great! </option>
+        <option> 3 - Pretty good </option>
+        <option> 2 - Not so great </option>
+        <option> 1 - Unfortunate </option>
+    </select>
+
+    <button id="openWIN" class="openWIN"> スタート </button>
+
+    <div class="status-bar">
+        <button id="headMENUtime" class="status-bar-field headMENUtime" style="color: black; margin-right: 0.40rem; position: absolute; bottom: 0.255rem; right: 0px; z-index: 10"> windows98 </button>
+    </div>
+
+    <div class="windows98">
+        <div id="startMENU" class="window" style="width: 250px; height: 325px; display: none;">
+            <img src="../../../../imgs/windows98StartBAR.png" style="position: absolute;" width="30px" height="325px" alt="startMENU#BAR">
+            <div class="window-body startMENU" style="position: inherit; margin-left: 2rem;">
+                <button class="centeredBTN">myComputer</button>
+                <button class="centeredBTN">explorer</button>
+                <button id="windowBAKA" class="centeredBTN">certifiedBAKA</button>
+                <button class="centeredBTN">myFavorites</button>
+                <button class="centeredBTN">myDocuments</button>
+                <button class="centeredBTN">run ...</button>
+                <a href="javascript:history.back()" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to go back to funSTUFF ?')"><button class="centeredBTN"> previousPage ...</button></a>
+            </div>
+        </div>
+    </div>    
+
+    <div class="taskbarWIN"> </div>
+</body>
+</html>

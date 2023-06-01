@@ -16,7 +16,7 @@
 
     <script type="text/javascript" src="../../../script/changeTEXT.js"> </script>
     <script type="text/javascript" src="../../../script/replyPOST.js"> </script>
-    <script type="text/javascript" src="../../../script/userInfo/userInfoCHIGURH.js"> </script>
+    <script type="text/javascript" src="../../../script/userInfo/userInfoGLOBAL.js"> </script>
     <script type="text/javascript" src="../../../script/playAUDIO.js"> </script>
     <script type="text/javascript" src="../../../script/currentTime.js"> </script>
 
@@ -81,10 +81,10 @@
             <div class="borderLINE" style="float: right; height: 75%"> </div>
                 <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
                     <div style="padding-left: 35px">
-                        <p style="cursor: help;"> <span> <a onclick="userINFO01()"> [ i ]&nbsp;&nbsp;profileBIO </a> </span> </p>
-                        <p style="cursor: help;"> <span> <a onclick="userINFO02()"> [ i ]&nbsp;&nbsp;userType </a> </span> </p>
-                        <p style="cursor: help;"> <span> <a onclick="userINFO03()"> [ i ]&nbsp;&nbsp;registrationDate </a> </span> </p>
-                        <p style="cursor: help;"> <span> <a onclick="userINFO04()"> [ i ]&nbsp;&nbsp;totalPosts </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('chigurh', 'bio')"> [ i ]&nbsp;&nbsp;profileBIO </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('chigurh', 'userType')"> [ i ]&nbsp;&nbsp;userType </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('chigurh', 'registrationDate')"> [ i ]&nbsp;&nbsp;registrationDate </a> </span> </p>
+                        <p style="cursor: help;"> <span> <a onclick="getUserInfo('chigurh', 'totalPosts')"> [ i ]&nbsp;&nbsp;totalPosts </a> </span> </p>
                     </div>
                 </p>
         </div>
@@ -115,28 +115,14 @@
                         <video src="../../../media/postMEDIA/vid/chigurh/chigurhP03.MP4" preload="metadata" controls poster="../../../imgs/nfswTHUMBalt.png" class="mediaROUNDED" style=" width: 250px; vertical-align: top;" alt="chigurhP03.mp4"> notSupportedVIDEO </video>
                     </span> <br>
                 </p>
-            <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST02()"> [&gt;] write a comment.. </a> </span> </p>
-            <div id="comments02" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
-                <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
-                    <span class="toolTIP toolTIPalt">
-                        <a onclick="hideCOMMENT02()"> <span id="subCOM02X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
-                    </span>
-                    <span class="toolTIP" style="margin-left: -9px;">
-                        <a onclick="showCOMMENT02()"> <span id="subCOMshow02" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
-                    </span>
-                </p>
-                <div id="subCOM02" class="postCOMMENTS">
-                    <p style="color: gray">
-                        <span style="color: cornflowerblue;">
-                            <span class="toolTIP oneComment">
-                                <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
-                                <span class="toolTIPtxt"> username </span>
-                            </span>
-                        </span> ::  <span class="commentCONTENT toolTIP">
-                                        <a onclick="showREPLY02()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
-                                        <span class="toolTIPtxt"> click to read.. </span>
-                                    </span>
-                        </p>
+                <div id="replyBUTTON">
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span> <a onclick="replyPOST(2)"> [&gt;] write a comment.. </a> </span>
+                    </p>    
+                </div>
+                <div id="repliesBLOCK2" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
+                    <div id="repliesSECTION2">
+                        <!-- user-comments -->
                     </div>
                 </div>
             </div>
@@ -197,28 +183,14 @@
                         <video src="../../../media/postMEDIA/vid/chigurh/chigurhP01.MP4" preload="metadata" controls poster="../../../imgs/nfswTHUMBalt.png" class="mediaROUNDED" style=" width: 250px; vertical-align: top;" alt="IMG_8260.MP4"> notSupportedVIDEO </video>
                     </span> <br>
                 </p>
-            <p style="text-align: right; padding-top: 10px; padding-right: 15px"> <span> <a onclick="replyPOST01()"> [&gt;] write a comment.. </a> </span> </p>
-            <div id="comments01" class="postBOTTOM paragraphMARGIN" style="display: none;">    <!-- COMMENTS SECTION -->
-                <p style="color: cornflowerblue" style="float: left;"> [ ... ] comments
-                    <span class="toolTIP toolTIPalt">
-                        <a onclick="hideCOMMENT01()"> <span id="subCOM01X" style="color: tomato">[X]</span>  </a> <span class="toolTIPtxt toolTIPtxtALT"> close comments </span>
-                    </span>
-                    <span class="toolTIP" style="margin-left: -9px;">
-                        <a onclick="showCOMMENT01()"> <span id="subCOMshow01" style="color: chartreuse; display: none;">[^]</span> </a> <span class="toolTIPtxt" style="margin-left: -50px;"> restore </span>
-                    </span>
-                </p>
-                <div id="subCOM01" class="postCOMMENTS">
-                    <p style="color: gray">
-                        <span style="color: cornflowerblue;">
-                            <span class="toolTIP oneComment">
-                                <a href="javascript:alert('[ i ]  this user is anonymous ..')">@anonymous</a>
-                                <span class="toolTIPtxt"> username </span>
-                            </span>
-                        </span> ::  <span class="commentCONTENT toolTIP">
-                                        <a onclick="showREPLY01()" style="color: rgb(150, 150, 150);"> [ &gt;&gt; ] commentTEXT </a>
-                                        <span class="toolTIPtxt"> click to read.. </span>
-                                    </span>
-                        </p>
+                <div id="replyBUTTON">
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span> <a onclick="replyPOST(1)"> [&gt;] write a comment.. </a> </span>
+                    </p>    
+                </div>
+                <div id="repliesBLOCK1" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
+                    <div id="repliesSECTION1">
+                        <!-- user-comments -->
                     </div>
                 </div>
             </div>
