@@ -1,6 +1,5 @@
-// IMPORTED FROM STACK OVERFLOW
-// BY robbmj QUESTION ID 20618355
-// REWORKED BY chatGPT
+// made by robbmj, ID 20618355
+// modified by chatGPT
 
 function startTimer(duration, display) {
     let start = Date.now(),
@@ -14,7 +13,7 @@ function startTimer(duration, display) {
         display.textContent = seconds;
 
         if (diff <= 0) {
-            clearInterval(interval); // Stop the interval when the countdown reaches zero
+            clearInterval(interval); // stop the interval when the countdown reaches zero
         }
     }
 

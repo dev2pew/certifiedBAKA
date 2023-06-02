@@ -8,9 +8,10 @@
     <title> playGround </title>
 
     <link rel="stylesheet" href="../../../style/mainStyle.css" type="text/css">
-    <link rel="stylesheet" href="../../../style/membersStyle.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/funStyle.css" type="text/css">
     <link rel="stylesheet" href="../../../style/scrollBAR.css" type="text/css">
     <link rel="stylesheet" href="../../../style/cssFonts/fontConsolas.css" type="text/css">
+    <link rel="stylesheet" href="../../../style/themeRUBY.css" type="text/css">
 
     <link rel="icon" href="../../../favicon/funSTUFF.png" type="image/png">
 
@@ -25,6 +26,10 @@
         margin-left: 25px;
         margin-right: 25px;
         }
+
+        .gradRAINBOW {
+            animation: gradientSCROLL 5s ease infinite;
+        }
     </style>
 </head>
 
@@ -35,13 +40,13 @@
 
 <body>
     <div class="headMENU">
-        <a href=".." class="logo"> <img src="../../../imgs/membersBAKA.png" alt="[9] membersBAKA" width="200px" height="35px" title=" ( 9 )  membersBAKA"> </a>
+        <a href=".." class="logo"> <img src="../../../imgs/funLOGO.png" alt="[9] funSTUFF" width="200px" height="35px" title="funSTUFF"> </a>
         <div class="headMENU-R headMENUalt">
             <a href="../../homepage" title=">> homePage"> homePage </a>
             <a class="active" href="../../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
             <a href="../../about" title=">> aboutPage"> aboutPage </a>
         </div>
-        <div class="headSubMENU" title="[ i ] liveSTATUS">
+        <div class="headSubMENU headSubMenuGRAD" title="[ i ] liveSTATUS">
             <div class="headSubMENU headSubMenuGRAD">
                 <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
                 <p class="headMENUarrow"> &lt;&lt; profilePAGE -- </span> </p>
@@ -98,18 +103,29 @@
                     </div>
                     <div class="borderLINE" style="float: left; height: 75%;"> </div>
                     <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
-                        <a href="windows98"> [&gt;] I'm Feeling Lucky ... </a>
+                        this is the <span class="gradRAINBOW gradRUBY noHoverEFF">playGround</span>! <br>
+                        this subpage contains completely <span class="gradRAINBOW noHoverEFF">random</span> things. <br> <br>
+                        each option is unique and changes after every refresh meaning they're completely <span class="gradRAINBOW noHoverEFF">random</span>! <br>  <br>
                     </p>
-                    <div id="replyBUTTON">
-                        <p style="text-align: right; padding-top: 10px; padding-right: 15px">
-                            <span> <a onclick="replyPOST(1)"> [&gt;] write a comment.. </a> </span>
-                        </p>    
+                    <div class="textBORDERin" style="width: 250px;">
+                        <div class="borderLINEin" style="float: left; height: 70%"> </div>
+                        <p>
+                            <a class="gradRAINBOW gradGOLD" href=""> <span class="gradRAINBOW">[ ? ]</span> -- luckyLINK -- <span class="gradRAINBOW">[ ? ]</span> </a> <br>
+                            <a class="gradRAINBOW gradGOLD" href=""> <span class="gradRAINBOW">[ ? ]</span> -- luckyLINK -- <span class="gradRAINBOW">[ ? ]</span> </a> <br>
+                            <a class="gradRAINBOW gradGOLD" href=""> <span class="gradRAINBOW">[ ? ]</span> -- luckyLINK -- <span class="gradRAINBOW">[ ? ]</span> </a> <br>
+                            <a class="gradRAINBOW gradGOLD" href=""> <span class="gradRAINBOW">[ ? ]</span> -- luckyLINK -- <span class="gradRAINBOW">[ ? ]</span> </a> <br>
+                            <a class="gradRAINBOW gradGOLD" href="windows98"> <span class="gradRAINBOW">[ ? ]</span> -- luckyLINK -- <span class="gradRAINBOW">[ ? ]</span> </a> <br>
+                        </p>
                     </div>
-                    <div id="repliesBLOCK1" class="postBOTTOM paragraphMARGIN" style="display: none; margin-top: 5px;">
-                        <div id="repliesSECTION1">
-                            <!-- user-comments -->
-                        </div>
-                    </div>
+                    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px">
+                        feel free to click any of the links below and have fun trying your <span class="gradRAINBOW gradGOLD noHoverEFF" style="color: gold;">luck</span>!
+                    </p>
+                    <p style="text-align: right; padding-top: 10px; padding-right: 15px">
+                        <span class="toolTIP">
+                            <a class="linkDISABLED" onclick="disabledCOMMENT()"> [X] write a comment.. </a>
+                            <span class="toolTIPtxt" style="margin-left: -100px"> commenting disabled </span>
+                        </span>
+                    </p>
             </div>
 
             <!-- newPOST -->

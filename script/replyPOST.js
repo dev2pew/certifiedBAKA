@@ -1,4 +1,5 @@
-// MADE BY chatGPT
+// local comment system
+// made by chatGPT
 
 function disabledCOMMENT() {
   audioWARN();

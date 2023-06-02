@@ -1,4 +1,4 @@
-//  CHANGE TEXT ON CLICK
+// modify text on click event
 
 function clickTXT01() {
     setTimeout(() => {

@@ -1,4 +1,4 @@
-// PLAY AUDIO FILE ON CLICK
+// play audio on click event
 
 function audioWARN() {
     let audio = document.getElementById("audioWARN01");

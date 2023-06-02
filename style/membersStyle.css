@@ -1,13 +1,9 @@
-/*  MADE BY SUB2PEW
-    THIS FILE IS A CSS/STYLESET
-    FUN THINGS TO DO -- CSS
-*/
+/* change hovered logo to membersBAKA */
 
-/* CHANGE TO FUN STUFF HOVERED */
-.headMENU a.logo:hover {    /* CHANGE LOGO IMAGE ON HOVER */
-    background-size: 200px 35px;    /* REFER TO MAINPAGE.HTML 14TH LINE */
+.headMENU a.logo:hover {
+    background-size: 200px 35px;
     background-image: url("../imgs/membersBAKAhover.png");
     background-repeat: no-repeat;
-    background-position-x: 15px; /* FOR THOSE VALUES PLEASE */
-    background-position-y: 9px; /* REFER TO 76TH LINE ... */
+    background-position-x: 15px;
+    background-position-y: 9px;
 }

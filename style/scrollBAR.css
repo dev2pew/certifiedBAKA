@@ -1,19 +1,19 @@
-/* CUSTOM SCROLLBAR STYLE */
+/* modify scrollbar style to match project theme */
 
-::-webkit-scrollbar {   /* SCROLLBAR WIDTH */
+::-webkit-scrollbar { /* scrollbar width */
     width: 10px;
     height: 10px;
 }
 
 /* ::-webkit-scrollbar-button */
 
-::-webkit-scrollbar-track {     /* SCROLLBAR AREA */
+::-webkit-scrollbar-track { /* scrollbar area */
     background: rgba(45, 75, 110, 0.55);
 }
 
 /* ::-webkit-scrollbar-track-piece */
 
-::-webkit-scrollbar-thumb {     /* SCROLLBAR */
+::-webkit-scrollbar-thumb { /* scrollbar element */
     /* background: rgba(100, 148, 237, 0.70); */
     background: rgba(45, 75, 110, 0.55);
     border-radius: 5px;
@@ -25,7 +25,7 @@
 
 /* ::-webkit-resizer */
 
-::-webkit-scrollbar-thumb:hover {   /* SCROLLBAR HANDLE ON HOVER */
+::-webkit-scrollbar-thumb:hover { /* scrollbar on hover */
     /* background: rgba(100, 148, 237, 0.75); */
     background: rgba(100, 148, 237, 0.25);
 }

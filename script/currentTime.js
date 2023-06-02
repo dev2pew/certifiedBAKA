@@ -1,6 +1,5 @@
-// IMPORTED FROM FLEXPIE.COM
-// CODE INTEGRATED AND FIXED BY SUB2PEW
-// REWORKED BY chatGPT
+// from flexpie.com
+// modified by sub2pew & chatGPT
 
 setInterval(currentTime, 1000);
 

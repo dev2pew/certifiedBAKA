@@ -1,8 +1,7 @@
 // MADE BY chatGPT USING jquery
 
 document.addEventListener('DOMContentLoaded', function() {
-  // dragElements
-  $(".title-bar").mousedown(function(e) {
+  $(".title-bar").mousedown(function(e) { // dragElements
     let $drag = $(this).closest('.window').addClass('active-handle').addClass('draggable');
     let z_idx = $drag.css('z-index'),
       drg_h = $drag.outerHeight(),
@@ -62,25 +61,22 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// REOPEN WINDOW WINDOWBAKA
+// reopen window 'WINDOWBAKA'
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Check if the window is already open
-  function isWindowOpen() {
+  function isWindowOpen() { // check if the window is already open
     let windowElement = document.getElementById('window1');
     return windowElement && windowElement.style.display !== 'none';
   }
 
-  // Open the window
-  function openWindow() {
+  function openWindow() { // open window
     let windowElement = document.getElementById('window1');
     if (windowElement) {
       windowElement.style.display = 'block';
     }
   }
-
-  // Button click event handler
-  let windowBAKAButton = document.getElementById('windowBAKA');
+  
+  let windowBAKAButton = document.getElementById('windowBAKA'); // button click event handler
   if (windowBAKAButton) {
     windowBAKAButton.addEventListener('click', function() {
       if (!isWindowOpen()) {

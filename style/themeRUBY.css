@@ -1,0 +1,179 @@
+/* .css stylesheet file for changing color theme */
+/* change for: playGround */
+
+body {
+    background-color: rgb(60, 25, 45);
+}
+
+a {
+    color: rgb(235, 100, 180);
+}
+
+.headMENU {
+    background-color: rgb(235, 100, 180);
+}
+
+.headMENU a {
+    color: black;
+}
+
+.headMENU a:hover {
+    color: white;
+}
+
+.headMENUalt a:hover {
+    background-color: rgb(170, 70, 145);
+}
+
+.headMENU a.active {
+    background-color: rgb(235, 100, 180);
+}
+
+.headSubMENU {
+    /* background-color: rgb(175, 65, 125); */
+    background-color: rgb(150, 40, 100);
+}
+
+.headSubMenuGRAD {
+    background-image: linear-gradient(
+        to right, #00000040, #00000000, #af417d, #af4178, #af417d, #00000000, #00000040
+    );
+
+    z-index: 1;
+}
+
+.headMENUarrow {
+    background-color: rgb(190, 80, 140);
+}
+
+.headMENUarrow::after {
+    border-color: transparent rgb(190, 80, 140) transparent transparent;
+}
+
+.headMENUtime {
+    background-color: rgb(190, 80, 140);
+}
+
+.headMENUtime::after {
+    border-color: transparent transparent transparent rgb(190, 80, 140);
+}
+
+#changeTXT01:hover, #changeTXT02:hover {
+    color: rgba(235, 100, 145, 0.55);
+}
+
+.textBORDER, .textBORDERquickView {
+    border: 5px solid rgb(75, 40, 55);
+    background-color: rgb(75, 40, 55);
+}
+
+.textBORDERin {
+    background-color: rgba(55, 35, 45, 0.55);
+}
+
+.borderLINE {
+    border-left: 0.45em solid white;
+}
+
+.borderLINEin {
+    border-left: 0.35em solid white;
+}
+
+.postHEAD {
+    color: gray;
+}
+
+.postTagNSFW {
+    border-color: indianred;
+    background-color: indianred;
+    color: rgba(255, 255, 255, 0.950);
+}
+
+.postTagPINNED {
+    border-color: rgb(115, 190, 255);
+    background-color: rgb(115, 190, 255);
+}
+
+.postTagORDER {
+    border-color: rgb(90, 205, 180);
+    background-color: rgb(90, 205, 180);
+}
+
+.postDate {
+    color: rgb(125, 75, 100);
+}
+
+.postDate:hover {
+    color: rgb(105, 60, 85);
+}
+
+.postBOTTOM {
+    color: gray;
+}
+
+.commentCONTENT {
+    color: rgb(150, 150, 150);
+}
+
+.commentCONTENT:hover {
+    color: rgb(100, 100, 100);
+}
+
+.linkDISABLED {
+    color: rgb(180, 115, 155);
+}
+
+.linkDISABLED:hover {
+    color: rgb(140, 85, 120);
+}
+
+.textSPOILER {
+    background-color: rgba(55, 35, 45, 0.55);
+}
+
+.textBORDERin .textSPOILER {
+    background-color: rgba(55, 35, 45, 0.55);
+}
+
+.textSPOILER:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.buttonNAV {
+    background-color:rgb(75, 40, 55);
+}
+
+.buttonNAV:focus  {
+    color: rgb(255, 170, 205);
+    outline-color: #ffdcee8c;
+}
+
+table, thead, tbody, tr, th {
+    color: rgba(175, 175, 175, 0.95);
+}
+
+table, thead {
+    border-color: rgba(55, 35, 45, 0.55);
+    background-color: rgba(55, 35, 45, 0.55);
+}
+
+th {
+    background-color: rgba(55, 35, 45, 0.55);
+}
+
+::-webkit-scrollbar-track { /* scrollbar area */
+    background: rgba(110, 45, 90, 0.55);
+}
+
+::-webkit-scrollbar-thumb { /* scrollbar element */
+    background: rgba(110, 45, 90, 0.55);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgba(110, 45, 90, 0.55);
+}
+
+::-webkit-scrollbar-thumb:hover { /* scrollbar on hover */
+    background: rgba(237, 100, 175, 0.25);
+}

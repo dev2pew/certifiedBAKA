@@ -1,6 +1,4 @@
-/*  WRITTEN BY SUB2PEW..
-    CSS STYLE SHEET FILE
-*/
+/* main stylesheet file for the project */
 
 @font-face {
     font-family: 'Consolas Regular';
@@ -24,20 +22,20 @@
 
 body {
     background-color: rgb(25, 40, 60);
-    overflow-y: scroll; /* ALWAYS SHOW VERTICAL SCROLLBAR */
+    overflow-y: scroll; /* always show scrollbar */
 }
 
-* { /* REMOVE SPACING & BORDERS */
+* { /* remove spacing & borders */
     margin: 0px;
     padding: 0px;
 }
 
 a, h1, h2, h3, h4, h5, h6, p, ul, li, dd, /* span, */ button, marquee, table, thead, tbody, tr, th {
-    font-family: 'Consolas Regular', Arial, sans-serif; /* FALLBACK FONT IS ARIAL */
+    font-family: 'Consolas Regular', Arial, sans-serif; /* generic font + fallback font */
     color: rgba(255, 255, 255, 0.950);
 
-    /* PREVENT TEXT SELECTING/HIGHLIGHTING */
-    -webkit-user-select: none; /* Safari */        
+    /* restrict user from selecting elements */
+    -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none;
@@ -59,19 +57,19 @@ img, video {
     outline: none;
 }
 
-/* @media screen and (max-width: 500px) {   CHANGE HEADER IF DISPLAY SIZE
+/* @media screen and (max-width: 500px) { /* change header size if screen is...
     .headMENU a {   LINKS
         float: none;
         display: block;
         text-align: left;
     }
 
-    .headMENU.R {   LINK SHIFT
+    .headMENU.R {   link shift
         float: none;
     }
 } */
 
-@media screen and (max-width: 320px) {  /* HIDE PROBLEMATIC ELEMENT ON SMALL SCREENS */
+@media screen and (max-width: 320px) { /* hide marquee text on small screens */
     h1 {
         font-size: 20px;
     }
@@ -164,8 +162,8 @@ img, video {
     }
 }
 
-@media screen and (min-width: 712px) {  /* HIDE PROBLEMATIC ELEMENT ON SMALL SCREENS */
-    .headSubMENU {  /* SCROLLING TEXT */
+@media screen and (min-width: 712px) { /* hide marquee text on smaller screens */
+    .headSubMENU { /* marquee text */
         float: none;
         margin-top: 5px;
     }
@@ -176,7 +174,7 @@ img, video {
         margin-top: 3px !important;
     }
 
-    /* .headSubMENU {   SCROLLING TEXT .. 558px -> 565px -> 563px -> 543px -> 553px -> 815px
+    /* .headSubMENU {   marquee text .. 558px -> 565px -> 563px -> 543px -> 553px -> 815px
         float: none;
         margin-top: 49px;
     } */
@@ -206,15 +204,16 @@ img, video {
     to { opacity: 100%; }
 }
 
-.headMENU {     /* HEADER MENU AT THE TOP OF WEBPAGE */
+.headMENU { /* place header at the top of the page */
     overflow: hidden;
     background-color: cornflowerblue;
+
     padding: 20px, 10px;
     position: fixed; left: 0px; right: 0px; top: 0px; bottom: auto;
-    z-index: 1;     /* BRING MENU TO FRONT */
+    z-index: 1; /* BRING MENU TO FRONT */
 }
 
-.headMENU a {   /* STYLESET FOR LINKS IN HEADER */
+.headMENU a { /* header links styleset */
     float: left;
     color: black;
     text-align: center;
@@ -227,7 +226,7 @@ img, video {
     transition: all 500ms;
 }
 
-.headMENU a.logo {      /* PREVENT LOGO FROM RESIZING */
+.headMENU a.logo { /* fixed size for logo */
     font-size: 25px;
     padding: 9px;
     padding-left: 15px;
@@ -235,33 +234,33 @@ img, video {
     transition: image 500ms;
 }
 
-.headMENU a.logo:hover {    /* CHANGE LOGO IMAGE ON HOVER */
-    opacity: 100%;  /* PREVENT LOGO FROM CHANGING OPACITY */
+.headMENU a.logo:hover { /* change logo on hover */
+    opacity: 100%; /* prevent link opacity change */
 
-    background-size: 200px 35px;    /* REFER TO MAINPAGE.HTML 14TH LINE */
+    background-size: 200px 35px; /* logo size */
     background-image: url("../imgs/nineLOGOhover.png");
     background-repeat: no-repeat;
-    background-position-x: 15px; /* FOR THOSE VALUES PLEASE */
-    background-position-y: 9px; /* REFER TO .headMENU a.logo --> padding & padding-left*/
+    background-position-x: 15px; /* for those values check... */
+    background-position-y: 9px; /* .headMENU a.logo --> padding & padding-left */
 }
 
-.headMENU a:hover {     /* CHANGE HOVER TEXT COLOR ON HOVER */
+.headMENU a:hover { /* styleset for header link hover */
     opacity: 80%;
     color: white;
     transition: color 0ms;
 }
 
-.headMENUalt a:hover {  /* ONLY CHANGE BG OF TEXT BUTTONS AND KEEP LOGO UNTOUCHED */
+.headMENUalt a:hover { /* change link color of header links */
     background-color: rgb(70, 105, 170);
 }
 
-.headMENU a.active {    /* STYLESET FOR ACTIVE LINK */
+.headMENU a.active { /* styleset for active link */
     background-color: cornflowerblue;
     color: rgba(255, 255, 255, 0.45);
     transition: color 0ms;
 }
 
-.headMENU-R {       /* SHIFT LINK SECTION TO THE RIGHT SIDE */
+.headMENU-R { /* place links to the right side */
     float: right;
 }
 
@@ -272,12 +271,16 @@ img, video {
     position: fixed; left: 0px; right: 0px; /* top: 49px; */ top: 44px; bottom: auto;
 }
 
-.headSubMENU::before {  /* KEEP SUBMENU */
+.headSubMENU::before { /* keep marquee bar */
     content: '\00a0';
+    position: inherit; /* make marquee bar height equal headSubMENU (?) */
 }
 
 .headSubMenuGRAD {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0), rgb(65, 105, 175), rgb(65, 105, 175), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+    background-image: linear-gradient(
+        to right, #00000040, #00000000, #4169af, #4169af, #4169af, #00000000, #00000040
+    );
+
     z-index: 1;
 }
 
@@ -287,6 +290,7 @@ img, video {
     border-width: 0px;
     padding-right: 20px;
     padding-left: 20px;
+
     /* background-color: rgb(65, 105, 175); */
     background-color: rgb(80, 120, 190);
     z-index: 1;
@@ -299,6 +303,7 @@ img, video {
     top: 50%;
     right: 100%;
     margin-top: -9px;
+
     border-width: 9px;
     border-style: solid;
     border-color: transparent rgb(80, 120, 190) transparent transparent;
@@ -306,13 +311,15 @@ img, video {
 
 .headMENUtime {
     float: left;
+    position: relative;
+
     border: solid;
     border-width: 0px;
     padding-right: 20px;
     padding-left: 20px;
+    
     background-color: rgb(80, 120, 190);
     z-index: 1;
-    position: relative;
 }
 
 .headMENUtime::after {
@@ -322,6 +329,7 @@ img, video {
     left: 100%;
     margin-top: -9px;
     border-width: 9px;
+
     border-style: solid;
     border-color: transparent transparent transparent rgb(80, 120, 190);
 }
@@ -338,7 +346,7 @@ img, video {
     right: 55px;
 }
 
-.headSubTXTscroll01 {   /* TEXT SCROLL ANIMATION */
+.headSubTXTscroll01 { /* marquee animation */
     animation: marquee linear;
     animation-duration: 20s;
     animation-direction: normal;
@@ -351,7 +359,7 @@ img, video {
     white-space: normal;
 }
 
-.headSubTXTscroll02 {   /* TEXT SCROLL ANIMATION */
+.headSubTXTscroll02 {
     animation: marquee linear;
     animation-duration: 20s;
     animation-direction: normal;
@@ -364,7 +372,7 @@ img, video {
     white-space: normal;
 }
 
-.headSubTXTscroll03 {   /* TEXT SCROLL ANIMATION */
+.headSubTXTscroll03 {
     animation: marquee linear;
     animation-duration: 20s;
     animation-direction: normal;
@@ -377,7 +385,7 @@ img, video {
     white-space: normal;
 }
 
-.headSubTXTscroll04INF {
+.headSubTXTscroll04INF { /* infinite marquee */
     animation: marquee linear infinite;
     animation-duration: 20s;
     animation-direction: normal;
@@ -413,37 +421,30 @@ img, video {
     margin-right: 25px;
 }
 
-#changeTXT01:hover {
+#changeTXT01:hover, #changeTXT02:hover {
     opacity: 55%;
 
     color: rgba(100, 150, 235, 0.55);
     transition: color 0ms;
 }
 
-#changeTXT02:hover {
-    opacity: 55%;
-
-    color: rgba(100, 150, 235, 0.55);
-    transition: color 0ms;
-}
-
-.imgRES {       /* PLACE IMAGE AT CENTER */
+.imgRES { /* place img at center */
     display: grid;
     height: 100%;
 }
 
-.imgCEN {       /* RESIZE IMAGE TO DISPLAY SIZE */
+.imgCEN { /* resize img to display size */
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
 }
 
-.toolTIP {      /* TOOLTIP CONTAINER */
+.toolTIP { /* tooltip container */
     position: relative;
     display: inline-block;
 }
 
-.toolTIP .toolTIPtxt {  /* TOOLTIP TEXT */
+.toolTIP .toolTIPtxt { /* tooltip text */
     font-family: 'Consolas Regular', Arial, sans-serif;
 
     visibility: hidden;
@@ -456,7 +457,7 @@ img, video {
     padding-right: 20px;
     border-radius: 6px;
 
-    position: absolute;     /* TOOLTIP POSITIONING */
+    position: absolute; /* tooltip position */
     z-index: 1;
     bottom: 125%;
     left: 50%;
@@ -464,11 +465,11 @@ img, video {
 
     white-space: nowrap;
 
-    opacity: 0;     /* FADE IN ANIMATION */
+    opacity: 0; /* fade in anim */
     transition: opacity 250ms;
 }
 
-.toolTIP .toolTIPtxt::after {   /* TOOLTIP ARROW */
+.toolTIP .toolTIPtxt::after { /* tooltip arrow */
     content: "";
     position: absolute;
     top: 100%;
@@ -483,13 +484,13 @@ img, video {
     left: 35%;
 }
 
-.toolTIP:hover .toolTIPtxt {   /* SHOW TOOLTIP ON HOVER */
+.toolTIP:hover .toolTIPtxt { /* tooltip on hover */
     visibility: visible;
     opacity: 80%;
     transition-delay: 1s;
 }
 
-.textBORDER {
+.textBORDER, .textBORDERquickView {
     height: auto;
     margin: 25px;
     padding: 15px;
@@ -503,29 +504,13 @@ img, video {
 
     border: 5px solid rgb(40, 55, 75);
     background-color: rgb(40, 55, 75);
-    border-radius: 15px; /* rollback30PX */
+    border-radius: 15px; /* rollback 30px */
 
-    position: relative; /* MAKE borderLINE ABLE TO CENTER INSIDE THIS DIV */
+    position: relative; /* make .borderLINE able to center inside this <div> */
     vertical-align: top;
 }
 
-.textBORDERquickView {
-    height: auto;
-    margin: 25px;
-    padding: 15px;
-
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-    border: 5px solid rgb(40, 55, 75);
-    background-color: rgb(40, 55, 75);
-    border-radius: 15px; /* rollback30PX */
-
-    position: relative; /* MAKE borderLINE ABLE TO CENTER INSIDE THIS DIV */
-    vertical-align: top;
-}
-
-.textBORDERin { /* bookmark */
+.textBORDERin {
     height: auto;
     width: 350px;
     margin-left: 50px;
@@ -563,13 +548,12 @@ img, video {
     margin-bottom: -170px;
 }
 
-.borderLINE { /* bookmark */
+.borderLINE {
     border-left: 0.45em solid white;
     border-radius: 25px;
     opacity: 10%;
 
-    /* CENTER CODE BEGIN */
-    position: absolute;
+    position: absolute; /* center element */
     top: 50%; left: 10px;
     transform: translate(-50%,-50%);
 }
@@ -579,8 +563,7 @@ img, video {
     border-radius: 25px;
     opacity: 10%;
 
-    /* CENTER CODE BEGIN */
-    position: absolute;
+    position: absolute; /* center element */
     top: 50%; left: 10px;
     transform: translate(-50%,-50%);
 }
@@ -608,7 +591,7 @@ img, video {
     color: gray;
 }
 
-.postHEAD a:hover {     /* CHANGE HOVER TEXT COLOR ON HOVER */
+.postHEAD a:hover { /* styleset for link hovered state */
     opacity: 50%;
     transition: opacity 0ms;
 }
@@ -677,18 +660,19 @@ img, video {
     transition: color 0ms;
 }
 
-.linkDISABLED {     /* NOT CLICKABLE LINK STYLE */
+.linkDISABLED { /* styleset for deactivated link */
     color: rgb(150, 150, 150);
     opacity: 75%;
     transition: color 250ms;
 }
 
-.linkDISABLED:hover {   /* NOT CLICKABLE LINK HOVER */
+.linkDISABLED:hover { /* styleset for deactivated hovered link */
     color: rgb(140, 140, 140);
     transition: color 0ms;
 }
 
-.gradRAINBOW {      /* GRADIENT RAINBOW COLORING WITH ANIMATION */
+.gradRAINBOW { /* gradient rainbow animation */
+    color: white;
     background-image: repeating-linear-gradient(to left, violet, cyan, lime, yellow, orange, tomato);
     background-clip: unset;
     background-size: 999% 999%;
@@ -698,7 +682,7 @@ img, video {
     animation: gradientSCROLL 3s ease infinite;
 }
 
-.gradRAINBOW:hover {
+.gradRAINBOW:hover, .gradREMOVE {
     background-image: none;
     background-clip: unset;
 
@@ -728,7 +712,7 @@ img, video {
     border-radius: 10px;
 }
 
-.mediaPOST a:hover {  /* PREVENT GLOBAL A:HOVER FROM MODIFYING THIS CLASS */
+.mediaPOST a:hover { /* styleset for hovered media */
     opacity: /* 75% */ 85%;
 }
 
@@ -749,8 +733,8 @@ img, video {
     margin-bottom: 5px;
 }
 
-.textBORDER:hover .mediaPOST {  /* MAKE MEDIA CLEAR ON POST HOVER */
-    opacity: /*90% */ 90%;
+.textBORDER:hover .mediaPOST { /* styleset for hovered post containing media */
+    opacity: /* 90% */ 90%;
     transition: opacity 250ms;
 
     /* filter: blur(0.5px); */
@@ -784,16 +768,6 @@ img, video {
     outline-color: #ffffff8c;
 
     font-weight: bold;
-}
-
-.gradLinkSPECIAL {
-    background-image: repeating-linear-gradient(to left, aqua, lightblue, cyan);
-    background-clip: unset;
-    background-size: 999% 999%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: gradientSCROLL 3s ease infinite;
 }
 
 table { margin-right: 15px; margin-bottom: 10px;}
@@ -835,7 +809,7 @@ th {
     font-family: 'Meiryo Regular', Arial, sans-serif !important;
 }
 
-#dialog p {
+#dialog p { /* jqueryUI window text color */
     color: black !important;
     font-size: 14px;
 }
@@ -843,4 +817,36 @@ th {
 #dialog span {
     color: black !important;
     font-size: 14px;
+}
+
+#dialog a {
+    color: blue !important;
+    font-size: 14px;
+}
+
+#dialog a:visited {
+    color: purple !important;
+    font-size: 14px;
+}
+
+.noHoverEFF {
+    pointer-events: none !important;
+}
+
+.gradCYAN { /* must contain .gradRAINBOW to work correctly */
+    background-image: repeating-linear-gradient(
+        to left, aqua, lightblue, cyan
+    );
+}
+
+.gradGOLD {
+    background-image: repeating-linear-gradient(
+        to left, #ffd700, #f1ff72, #ffc74e, #ffec7f, #ffffff
+    );
+}
+
+.gradRUBY {
+    background-image: repeating-linear-gradient(
+        to left, #ff4d97, #fa72ff, #cb7eff, #bb7fff, #ffbaba
+    ) !important;
 }

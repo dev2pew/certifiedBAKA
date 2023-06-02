@@ -23,18 +23,19 @@
     <link rel="stylesheet" href="../../style/jqueryLIB/themes/cupertino/jquery-ui.structure.css" type="text/css">
     <link rel="stylesheet" href="../../style/jqueryLIB/themes/cupertino/jquery-ui.theme.css" type="text/css">
     <script>
-        $( function() {
+        $(function() {
             $( "#dialog" ).dialog({
                 autoOpen: false,
                 width: 450,
                 height: 205,
+                
                 resizable: false,
                 });
                 
                 $("#aNotice").click( function() {
                     $("#dialog").dialog("open");
                 })
-        } );
+        });
     </script>
 
     <style>
@@ -164,22 +165,20 @@
             <a href="../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
             <a href="../about" title=">> aboutPage"> aboutPage </a>
         </div>
-        <div class="headSubMENU" title="[ i ] liveSTATUS">
+        <div class="headSubMENU headSubMenuGRAD" title="[ i ] liveSTATUS">
             <div class="headSubMENU headSubMenuGRAD">
-                <div class="headSubMENU headSubMenuGRAD">
-                    <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
-                    <p class="headMENUarrow"> &lt;&lt; homePAGE -- </span> </p>
-                    <p class="headSubTXTscroll01" style="opacity: 0%;"> welcome to [9] certifiedBAKA !! </p>
-                    <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> this webpage was built for ICT midterm test! </p>
-                    <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> many neurons were sacrificed in making this webpage!! </p>
-                    <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
-                        [9] certifiedBAKA
-                        [9] certifiedBAKA
-                        [9] certifiedBAKA
-                        [9] certifiedBAKA
-                        [9] certifiedBAKA
-                    </p>
-                </div>
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; homePAGE -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> welcome to [9] certifiedBAKA !! </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> this webpage was built for ICT midterm test! </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> many neurons were sacrificed in making this webpage!! </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    [9] certifiedBAKA
+                    [9] certifiedBAKA
+                    [9] certifiedBAKA
+                    [9] certifiedBAKA
+                    [9] certifiedBAKA
+                </p>
             </div>
         </div>
     </div>
@@ -200,10 +199,10 @@
         <a title="[ i ]  click to read ..."> [!] importantNotice </a>
     </div>
 
-    <div id="dialog" class="sampleDIALOG" title="importantNotice">
+    <div id="dialog" title="importantNotice">
         <p> it is recommended to use the following settings: <br>
             webBrowser :: Google Chrome 108.0.5359.99 or later versions. <br> <br>
-            additionalNotes :: this website may not display correctly on mobile devices or other devices with small screen, so make sure to use desktop or tablet instead !! </p>
+            additionalNotes: this website may not display correctly on mobile devices or other devices with small screen, so make sure to use desktop or tablet instead !! </p>
     </div>
 </body>
 </html>

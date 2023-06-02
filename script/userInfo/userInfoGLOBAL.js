@@ -1,4 +1,6 @@
-// MADE BY chatGPT
+// user information mini-database
+// made by chatGPT
+
 const userInfo = {
     sub2pew: {
         bio: "[ i ]  bio#sub2pew\n\n > ᗜˬᗜ\n/ osu!std: 4,679pp ( – 0pp) #71K ( ↓ 1K)\n/ osu!mania: 4,327pp ( – 0pp) #23K ( – 0K)\n/ sdvxVOLFORCE: 16.832VF ( – 0VF)",

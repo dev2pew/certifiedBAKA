@@ -1,4 +1,4 @@
-// IMPORTED FROM GEEKSFORFEEKS.ORG 
+// from geeksforfeeks.org
 
 setInterval(currentTime, 1000);
 

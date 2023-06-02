@@ -23,18 +23,25 @@
     <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.structure.css" type="text/css">
     <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.theme.css" type="text/css">
     <script>
-        $( function() {
+        $(function() {
             $( "#dialog" ).dialog({
                 width: 300,
                 height: 225,
-                resizable: false,
+
+                minWidth: 300,
+                minHeight: 200,
+
+                maxWidth: 500,
+                maxHeight: 250,
+
+                resizable: true,
                 position: {
                     my: "right bottom",
                     at: "right bottom", 
                     of: window
                 }
                 });
-                } );
+                });
     </script>
 
     <style>
@@ -164,7 +171,7 @@
             <a href="../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
             <a class="active" href="javascript:alert('[ i ]  you are currently on this subpage !!')" title="[ i ] you are here"> aboutPage </a>
         </div>
-        <div class="headSubMENU" title="[ i ] liveSTATUS">
+        <div class="headSubMENU headSubMenuGRAD" title="[ i ] liveSTATUS">
             <div class="headSubMENU headSubMenuGRAD">
                 <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
                 <p class="headMENUarrow"> &lt;&lt; aboutPAGE -- </span> </p>
@@ -195,8 +202,8 @@
         </div>
     </div>
 
-    <div id="dialog" class="sampleDIALOG" title="aboutPage">
-        <p> welcome to aboutPage! Here you can see brief information about the creator and a website. Also, you can contact me if you would like to! You can resize & close this window by hitting the &apos;x&apos; button. This window was made via jquery! Try it, it is super convenient to use! :) </p>
+    <div id="dialog" title="aboutPage">
+        <p> welcome to aboutPage! Here you can see brief information about the creator and website. Also, you can contact me if you would like to! <br> This window was made via <span><a href="https://jqueryui.com/" target="_blank">jqueryUI!</a></span> You can resize & close this window by hitting the &apos;x&apos; button. Try it, it is super convenient to use! :&#41; </p>
     </div>
 </body>
 </html>

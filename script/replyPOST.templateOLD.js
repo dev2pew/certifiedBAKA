@@ -1,6 +1,4 @@
-//  REPLY TO POST ON PAGES
-//  REPLIES SURVIVE BROWSER
-//  REFRESH & RESTART ...
+// local comments system
 
 let = response01.length;
 let = response02.length;
