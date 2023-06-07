@@ -835,7 +835,7 @@ th {
 
 .gradCYAN { /* must contain .gradRAINBOW to work correctly */
     background-image: repeating-linear-gradient(
-        to left, aqua, lightblue, cyan
+        to left, aqua, cyan, darkcyan, lightgreen, lime, lightblue
     );
 }
 
