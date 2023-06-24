@@ -1,4 +1,4 @@
-// MADE BY chatGPT USING jquery
+// made by chatGPT
 
 document.addEventListener('DOMContentLoaded', function() {
   $(".title-bar").mousedown(function(e) { // dragElements

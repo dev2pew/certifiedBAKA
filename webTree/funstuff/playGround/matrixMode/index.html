@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
+	<title> matrixMode </title>
+
+	<link rel="stylesheet" href="../../../../style/mainStyle.css" type="text/css">
+
+	<link rel="icon" href="../../../../favicon/ico/matrix.ico" type="icon/png">
+
+	<style>
+		html {
+			-webkit-text-size-adjust: 100%;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+
+			overflow: hidden;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+
+			-ms-overflow-style: none; /* Internet Explorer 10+ */
+			scrollbar-width: none; /* Firefox */
+		}
+
+		body {
+			font-family: Rubik, sans-serif;
+			background: black;
+		}
+
+		a {
+			all: initial !important;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		
+		#matrixRain {
+			display: none; /* hide matrix before delay [javascript] */
+			width: 100%;
+			height: 100%;
+		}
+
+		.containerBT {
+			bottom: 25px;
+			right: 25px;
+			position: absolute;
+
+			display: none;
+			opacity: 0%;
+			animation: makeVisible 1250ms ease-in-out 0s forwards;
+		}
+
+		@keyframes makeVisible {
+			0% {
+				opacity: 0%;
+			}
+
+			100% {
+				opacity: 100%;
+			}
+		}
+
+		.containerBT button {
+			color: #000;
+			background-color: #0F0;
+			
+			font-size: 18px;
+			font-weight: bold;
+			
+			opacity: 30%;
+			border-radius: 5px;
+
+			padding: 10px 20px;
+			transition: opacity 150ms, background-color 150ms;
+			
+			cursor: pointer;
+		}
+
+		.containerBT button:hover {
+			color: #ffffff;
+			background-color: #969696;
+
+			opacity: 70%;
+
+			transition: opacity 0ms, background-color 0ms;
+		}
+	</style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="../../../../media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="../../../../media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+	<canvas id="matrixRain"> </canvas>
+	<div id="containerBT" class="containerBT">
+		<a href=".." onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to go back to funSTUFF ?')"><button id="goBackBT"> previousPage... </button></a>
+		<button id="hideBT" onclick="audioWARN(); return alert('[ 9 ]  certifiedBAKA\n[ i ]  buttons are now hidden. press X to undo.')"> hide </button>
+	</div>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="../../../../script/matrixMode.js"> </script>
+	<script type="text/javascript" src="../../../../script/playAUDIO.js"> </script>
+</body>
+</html>

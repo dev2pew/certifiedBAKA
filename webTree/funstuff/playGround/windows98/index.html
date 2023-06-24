@@ -10,13 +10,6 @@
     <link rel="stylesheet" href="../../../../style/windowsLIB/win98/windows98.css" type="text/css">
     <link rel="icon" href="../../../../favicon/windows98.png" type="icon/png">
 
-    <script type="text/javascript" src="../../../../script/jqueryLIB/jquery.js"> </script>
-    <script type="text/javascript" src="../../../../script/jqueryLIB/jqueryUI.js"> </script>
-    <script defer type="text/javascript" src="../../../../script/windows98.js"> </script>
-    <script type="text/javascript" src="../../../../script/currentTime.js"> </script>
-    <script type="text/javascript" src="../../../../script/playAUDIO.js"> </script>
-
-
     <style>
         body {
             overflow: hidden; /* hide scroll */
@@ -286,11 +279,20 @@
                 <button class="centeredBTN">myFavorites</button>
                 <button class="centeredBTN">myDocuments</button>
                 <button class="centeredBTN">run ...</button>
-                <a href="javascript:history.back()" onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to go back to funSTUFF ?')"><button class="centeredBTN"> previousPage ...</button></a>
+                <a href=".." onclick="audioWARN(); return confirm('[ 9 ]  certifiedBAKA\n[ ? ]  do you really want to go back to funSTUFF ?')"><button class="centeredBTN"> previousPage...</button></a>
             </div>
         </div>
     </div>    
 
     <div class="taskbarWIN"> </div>
+
+    <!-- javscript -->
+    <script type="text/javascript" src="../../../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../../../script/currentTime.js"> </script>
+    <script defer type="text/javascript" src="../../../../script/windows98.js"> </script>
+
+    <!-- jquery library -->
+    <script type="text/javascript" src="../../../../script/jqueryLIB/jquery.js"> </script>
+    <script type="text/javascript" src="../../../../script/jqueryLIB/jqueryUI.js"> </script>
 </body>
 </html>

@@ -7,13 +7,6 @@
 
     <title> [ i ] Redirecting... </title>
 
-    <script>
-        setTimeout(function() {
-            window.location.href = "webTree/homepage/index.html";
-        }, 5000);
-    </script>
-    <script type="text/javascript" src="script/countdownTime.js"> </script>
-
     <style>
         @media screen and (max-width: 412px) {
             a, p {
@@ -37,6 +30,13 @@
 </head>
 <body>
     <p> auto redirect in <span id="countdownREDIRECT"> 5 </span> seconds ... </p>
-    <p><a href="webTree/homepage/index.html" style="color: cadetblue;">&gt;&gt; Redirect manually ...</a></p>
+    <p><a href="webTree/homepage" style="color: cadetblue;">&gt;&gt; Redirect manually ...</a></p>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "webTree/homepage";
+        }, 5000);
+    </script>
+    <script type="text/javascript" src="script/countdownTime.js"> </script>
 </body>
 </html>

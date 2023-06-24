@@ -13,36 +13,10 @@
 
     <link rel="icon" href="../../favicon/ico/aboutP.ico" type="image/x-icon">
 
-    <script type="text/javascript" src="../../script/playAUDIO.js"> </script>
-    <script type="text/javascript" src="../../script/currentTime.js"> </script>
-
-    <!-- JQUERY LIBRARY STUFF -->
-    <script type="text/javascript" src="../../script/jqueryLIB/jquery.js"> </script>
-    <script type="text/javascript" src="../../script/jqueryLIB/jqueryUI.js"> </script>
+    <!-- jquery css -->
     <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.structure.css" type="text/css">
     <link rel="stylesheet" href="../../style/jqueryLIB/jquery-ui.theme.css" type="text/css">
-    <script>
-        $(function() {
-            $( "#dialog" ).dialog({
-                width: 300,
-                height: 225,
-
-                minWidth: 300,
-                minHeight: 200,
-
-                maxWidth: 500,
-                maxHeight: 250,
-
-                resizable: true,
-                position: {
-                    my: "right bottom",
-                    at: "right bottom", 
-                    of: window
-                }
-                });
-                });
-    </script>
 
     <style>
         body {
@@ -165,10 +139,10 @@
 
 <body>
     <div class="headMENU">
-        <a href="../homepage/index.html" class="logo"> <img src="../../imgs/nineLOGO.png" alt="[9] certifiedBAKA" width="200px" height="35px" title="（９） 認定されたばか"> </a>
+        <a href="../homepage" class="logo"> <img src="../../imgs/nineLOGO.png" alt="[9] certifiedBAKA" width="200px" height="35px" title="（９） 認定されたばか"> </a>
         <div class="headMENU-R headMENUalt">
-            <a href="../homepage/index.html" title=">> homePage"> homePage </a>
-            <a href="../../webTree/funstuff/index.html" title=">> funSTUFF"> funSTUFF </a>
+            <a href="../homepage" title=">> homePage"> homePage </a>
+            <a href="../../webTree/funstuff" title=">> funSTUFF"> funSTUFF </a>
             <a class="active" href="javascript:alert('[ i ]  you are currently on this subpage !!')" title="[ i ] you are here"> aboutPage </a>
         </div>
         <div class="headSubMENU headSubMenuGRAD" title="[ i ] liveSTATUS">
@@ -205,5 +179,34 @@
     <div id="dialog" title="aboutPage">
         <p> welcome to aboutPage! Here you can see brief information about the creator and website. Also, you can contact me if you would like to! <br> This window was made via <span><a href="https://jqueryui.com/" target="_blank">jqueryUI!</a></span> You can resize & close this window by hitting the &apos;x&apos; button. Try it, it is super convenient to use! :&#41; </p>
     </div>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../../script/playAUDIO.js"> </script>
+    <script type="text/javascript" src="../../script/currentTime.js"> </script>
+
+    <!-- jquery library -->
+    <script type="text/javascript" src="../../script/jqueryLIB/jquery.js"> </script>
+    <script type="text/javascript" src="../../script/jqueryLIB/jqueryUI.js"> </script>
+    <script>
+        $(function() {
+            $( "#dialog" ).dialog({
+                width: 300,
+                height: 225,
+
+                minWidth: 300,
+                minHeight: 200,
+
+                maxWidth: 500,
+                maxHeight: 250,
+
+                resizable: true,
+                position: {
+                    my: "right bottom",
+                    at: "right bottom", 
+                    of: window
+                }
+            });
+        });
+    </script>
 </body>
 </html>
